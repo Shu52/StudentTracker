@@ -1,9 +1,9 @@
 import React, { Component } from "react"
-
+import API from "../../APIManger"
 
 export default class Login extends Component {
 
-    // Set initial state
+    // Set initial component state
     state = {
         name: "",
         password: ""
@@ -33,11 +33,30 @@ export default class Login extends Component {
         )
         this.props.history.push("/");
     }
+    registerStudent =(e) =>{
+        e.preventDefault();
+        //call to post student
+        API.postStudent({
+            name: this.state.name,
+            password: this.state.password
+        })
+        .then(()=>{
+            console.log("inside .then")
+            localStorage.setItem(
+                "credentials",
+                JSON.stringify({
+                    name: this.state.name,
+                    password: this.state.password
+                })
+            )
+            this.props.history.push("/");
+        })
+    }
 
     render() {
         return (
             <form onSubmit={this.handleLogin}>
-                <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Please sign in or Register</h1>
                 <label htmlFor="inputName">
                     Display Name
                 </label>
@@ -52,9 +71,10 @@ export default class Login extends Component {
                        id="password"
                        placeholder="Password"
                        required="" />
-                <button type="submit">
+                <button type="submit" className="btn btn-primary">
                     Sign in
                 </button>
+                <button type="button" className="btn btn-warning" onClick = {(e) => this.registerStudent(e)}>Register Account</button>
             </form>
         )
     }
