@@ -9,33 +9,48 @@
       "name": "shusajid@gmail.com",
       "password": "password",
       "id": 1
+    },
+    {
+      "name": "shusajid@gmail.com",
+      "password": "password",
+      "id": 2
     }
   ],
-  "exercises":[
+  "exercises": [
     {
-      "id":0,
-      "name":"cli Create"
+      "id": 0,
+      "name": "cli Create"
     },
     {
-      "id":1,
-      "name":"Git Aliases"
+      "id": 1,
+      "name": "Git Aliases"
     },
     {
-      "id":2,
-      "name":"Git Function"
+      "id": 2,
+      "name": "Git Function"
     },
     {
-      "id":3,
-      "name":"Congressional district"
+      "id": 3,
+      "name": "Congressional district"
     },
     {
-      "id":4,
-      "name":"Congressional district Challenge"
+      "id": 4,
+      "name": "Congressional district Challenge"
     },
     {
-      "id":5,
-      "name":"Congressional district Advanced Challenge"
+      "id": 5,
+      "name": "Congressional district Advanced Challenge"
     }
-    
+  ],
+  "studentExercises": [
+    {
+      "id": 0,
+      "studentId": 0,
+      "exerciseId": 0,
+      "githubLink": "stuff",
+      "complete": false,
+      "stuck": false,
+      "feedback": ""
+    }
   ]
 }

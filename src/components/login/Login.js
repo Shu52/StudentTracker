@@ -55,8 +55,9 @@ export default class Login extends Component {
 
     render() {
         return (
+            <React.Fragment>
             <form onSubmit={this.handleLogin}>
-                <h1 className="h3 mb-3 font-weight-normal">Please sign in or Register</h1>
+                <h1 className="h3 mb-3 font-weight-normal text-center">Please sign in or Register</h1>
                 <label htmlFor="inputName">
                     Display Name
                 </label>
@@ -76,6 +77,7 @@ export default class Login extends Component {
                 </button>
                 <button type="button" className="btn btn-warning" onClick = {(e) => this.registerStudent(e)}>Register Account</button>
             </form>
+            </React.Fragment>
         )
     }
 }
