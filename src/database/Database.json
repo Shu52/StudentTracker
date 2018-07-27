@@ -48,9 +48,9 @@
       "studentId": 0,
       "exerciseId": 0,
       "githubLink": "stuff",
-      "complete": false,
-      "stuck": false,
-      "feedback": ""
+      "complete": true,
+      "stuck": true,
+      "feedback": "more things"
     }
   ]
 }

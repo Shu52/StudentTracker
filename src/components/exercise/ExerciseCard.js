@@ -18,8 +18,19 @@ componentDidMount() {
         e.preventDefault()
         console.log("inside patch")
         const patchGithubLink={githubLink:this.state.githubLink}
-        console.log(this.state.githubLink)
         API.patchItem("studentExercises","0", patchGithubLink).then(console.log(patchGithubLink))
+    }
+    handleChecked = evt =>{
+    const stateToChange = {};
+      stateToChange[evt.target.id] = true;
+      this.setState(stateToChange);
+      API.patchItem("studentExercises","0", stateToChange).then(console.log(stateToChange))
+    }
+    handleEditPatch = e =>{
+        e.preventDefault()
+        console.log("inside feedback patch")
+        const patchFeedback={feedback:this.state.feedback}
+        API.patchItem("studentExercises","0", patchFeedback).then(console.log(patchFeedback))
     }
 
     render(){
@@ -44,17 +55,39 @@ componentDidMount() {
                         </button>
                <div>
                <label htmlFor="completeBox">Complete</label>
-               <input type="checkbox" name ="completeBox" />
-               <label htmlFor="stuckBox">Stuck</label>
-               <input type="checkbox" name ="stuckBox" />
+
+               <input type="checkbox" 
+                        name ="completeBox" 
+                        id = "complete"
+                        onChange={this.handleChecked}
+                        />
+
+               <label htmlFor="stuckBox" >Stuck</label>
+
+               <input type="checkbox" 
+                        name ="stuckBox" 
+                        id ="stuck" 
+                        onChange={this.handleChecked}
+                        />
                </div>
             <div className="input-group">
                 <div className="input-group-prepend">
                     <span className="input-group-text">Feedback</span>
                 </div>
-                <textarea className="form-control" aria-label="Feedback"></textarea>
+                <textarea 
+                            className="form-control" 
+                            aria-label="Feedback" 
+                            id="feedback"
+                            onChange={this.handleFieldChange}
+                            >
+                </textarea>
+
             </div>
-                <button type="button" className="btn btn-dark btn-sm">Submit Feedback</button>
+                <button type="button" 
+                className="btn btn-dark btn-sm"
+                onClick = {this.handleEditPatch}
+                >Submit Feedback
+                </button>
         </div>
                     
                     
