@@ -14,6 +14,11 @@
       "name": "shusajid@gmail.com",
       "password": "password",
       "id": 2
+    },
+    {
+      "name": "grady",
+      "password": "password",
+      "id": 3
     }
   ],
   "exercises": [
@@ -47,10 +52,10 @@
       "id": 0,
       "studentId": 0,
       "exerciseId": 0,
-      "githubLink": "stuff",
+      "githubLink": "alabama",
       "complete": true,
       "stuck": true,
-      "feedback": "more things"
+      "feedback": "stuff"
     }
   ]
 }

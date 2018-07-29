@@ -36,5 +36,12 @@ const ApiManager = Object.create({},{
           );
         }
       },
+      checkOne: {
+        value: (collectionAndJsonSyntax) => {
+          return fetch(`http://localhost:5002/${collectionAndJsonSyntax}`).then(e =>
+            e.json()
+          );
+        }
+      },
     })//end of object.create
     export default ApiManager;

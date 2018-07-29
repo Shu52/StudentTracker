@@ -24,13 +24,30 @@ export default class Login extends Component {
             For now, just store the name and password that
             the customer enters into local storage.
         */
-        localStorage.setItem(
-            "credentials",
-            JSON.stringify({
-                name: this.state.name,
-                password: this.state.password
-            })
-        )
+       API.checkOne(`students?name=${this.state.name}`).then(student =>{
+           if(student.length === 0 || student[0].name !== this.state.name){
+               alert("Empty value or incorrect/unregistered student, try again")
+               return
+           }
+           if(student.length === 0 || student[0].password !== this.state.password){
+            alert("Empty value or incorrect password, try again")
+            return
+        }
+           else if(student[0].name === this.state.name){
+            sessionStorage.setItem("currentUser", student[0].id)
+            console.log("currentUser id", student[0].id, "currentUserName", student[0].name)
+            localStorage.setItem(
+                "credentials",
+                JSON.stringify({
+                    name: this.state.name,
+                    password: this.state.password
+                })
+            )
+
+           }          
+
+       })
+        
         this.props.history.push("/");
     }
     registerStudent =(e) =>{
@@ -40,8 +57,11 @@ export default class Login extends Component {
             name: this.state.name,
             password: this.state.password
         })
-        .then(()=>{
-            console.log("inside .then")
+        .then(e => e.json())
+        .then((response)=>{
+           sessionStorage.setItem("currentUser", response.id)
+            console.log("responseId", response.id)
+
             localStorage.setItem(
                 "credentials",
                 JSON.stringify({

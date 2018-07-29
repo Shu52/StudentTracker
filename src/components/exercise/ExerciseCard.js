@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import API from "../../APIManger";
 export default class ExerciseCard extends Component{
 state ={
-    studentExercises:[]
+    studentExercises:[],
+    
 }
+//add studentExercise properties
 componentDidMount() {
     API.getOne("studentExercises","0")
     .then(studentExercises => this.setState({ studentExercises }))
@@ -20,15 +22,21 @@ componentDidMount() {
         const patchGithubLink={githubLink:this.state.githubLink}
         API.patchItem("studentExercises","0", patchGithubLink).then(console.log(patchGithubLink))
     }
-    handleChecked = evt =>{
-    const stateToChange = {};
-      stateToChange[evt.target.id] = true;
-      this.setState(stateToChange);
+    handleChecked = (evt,checkbox) =>{
+        // if(checkbox === "checkBox1"){
+
+        //     this.setState({checkBox1:!this.state.checkBox1})
+        //     // set state value = opposite of current value
+        // }
+    const stateToChange = {...this.state.studentExercises, [checkbox]:!this.state.studentExercises[checkbox]};
+    // console.log("state",this.state.studentExercises)
+    //   stateToChange.studentExercises[evt.target.id]= this.state.checkBox1;
+      this.setState({studentExercises:stateToChange});
       API.patchItem("studentExercises","0", stateToChange).then(console.log(stateToChange))
     }
     handleEditPatch = e =>{
         e.preventDefault()
-        console.log("inside feedback patch")
+        // console.log("parent", e)
         const patchFeedback={feedback:this.state.feedback}
         API.patchItem("studentExercises","0", patchFeedback).then(console.log(patchFeedback))
     }
@@ -59,7 +67,8 @@ componentDidMount() {
                <input type="checkbox" 
                         name ="completeBox" 
                         id = "complete"
-                        onChange={this.handleChecked}
+                        onChange={(e)=>this.handleChecked(e,"complete")}
+                        checked ={this.state.studentExercises.complete||false}
                         />
 
                <label htmlFor="stuckBox" >Stuck</label>
@@ -67,7 +76,8 @@ componentDidMount() {
                <input type="checkbox" 
                         name ="stuckBox" 
                         id ="stuck" 
-                        onChange={this.handleChecked}
+                        onChange={(e)=>this.handleChecked(e,"stuck")}
+                        checked ={this.state.studentExercises.stuck||false}
                         />
                </div>
             <div className="input-group">
