@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import API from "../../APIManger";
+import { Collapse } from 'reactstrap';
 export default class ExerciseCard extends Component{
 state ={
     studentExercises:[],
-    
+    collapse:false
 }
 //add studentExercise properties
+toggle() {
+    this.setState({ collapse: !this.state.collapse });
+  }
 componentDidMount() {
     API.getOne("studentExercises","0")
     .then(studentExercises => this.setState({ studentExercises }))
@@ -45,9 +49,10 @@ componentDidMount() {
         return (
             <div className="card" style={{width: `22rem`}}>
                 <div className="card-body">
-                    <h5 className="card-header">
+                    <h5 className="card-header" onClick={this.toggle.bind(this)}>
                         {this.props.exercise.name}
                     </h5>
+                    <Collapse isOpen={this.state.collapse}>
                     <div className="control">
                      <label htmlFor="url">GitHub Repo URL:</label>
                         <input type="url" name="url" id="githubLink"
@@ -99,7 +104,7 @@ componentDidMount() {
                 >Submit Feedback
                 </button>
         </div>
-                    
+        </Collapse>        
                     
      </div>
     </div>

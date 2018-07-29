@@ -52,10 +52,19 @@
       "id": 0,
       "studentId": 0,
       "exerciseId": 0,
-      "githubLink": "alabama",
+      "githubLink": "",
       "complete": true,
-      "stuck": true,
-      "feedback": "stuff"
+      "stuck": false,
+      "feedback": ""
+    },
+    {
+      "id": 1,
+      "studentId": 0,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": ""
     }
   ]
 }
