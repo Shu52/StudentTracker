@@ -9,21 +9,6 @@
       "name": "shusajid@gmail.com",
       "password": "password",
       "id": 1
-    },
-    {
-      "name": "shusajid@gmail.com",
-      "password": "password",
-      "id": 2
-    },
-    {
-      "name": "grady",
-      "password": "password",
-      "id": 3
-    },
-    {
-      "name": "jenn",
-      "password": "password",
-      "id": 4
     }
   ],
   "exercises": [
@@ -58,18 +43,63 @@
       "studentId": 0,
       "exerciseId": 0,
       "githubLink": "",
-      "complete": true,
+      "complete": false,
       "stuck": false,
       "feedback": ""
     },
     {
-      "id": 1,
-      "studentId": 0,
+      "studentId": 1,
+      "exerciseId": 0,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 1
+    },
+    {
+      "studentId": 1,
       "exerciseId": 1,
       "githubLink": "",
       "complete": false,
       "stuck": false,
-      "feedback": ""
+      "feedback": "",
+      "id": 2
+    },
+    {
+      "studentId": 1,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 3
+    },
+    {
+      "studentId": 1,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 4
+    },
+    {
+      "studentId": 1,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 5
+    },
+    {
+      "studentId": 1,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 6
     }
   ]
 }

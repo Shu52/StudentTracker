@@ -53,6 +53,19 @@ const ApiManager = Object.create({},{
             body: JSON.stringify(theObject)
           });
         }
-      }//end of post studentExercises
+      },//end of post studentExercises
+      patchFeedback: {
+        value: (route,exerciseId, theObject) => {
+          return fetch(`http://localhost:5002/${route}`, exerciseId,
+          {
+            // http://localhost:5002/studentExercises?studentId=3&exerciseId=1
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(theObject)
+          });
+        }
+      },//end of patch
     })//end of object.create
     export default ApiManager;

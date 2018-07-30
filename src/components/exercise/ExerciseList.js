@@ -5,20 +5,23 @@ import API from "../../APIManger";
 export default class ExerciseList extends Component {
 state = {
     exercises: [],
+    studentExercises:[]
 }
 componentDidMount() {
-    API.getAll("exercises")
-    .then(exercises => this.setState({ exercises }))
+  let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+    API.getAll(`studentExercises?studentId=${studentId}&_expand=exercise`)
+    .then(studentExercises => this.setState({ studentExercises }))
   }
   
   render() {
     return (
       <React.Fragment>
         <ul>
-          {this.state.exercises.map(exercise => (
+          {this.state.studentExercises.map(exercise => (
+            
             <ExerciseCard
               key={exercise.id}
-              exercise={exercise}
+              studentExercises={exercise}
               
             />
           ))}

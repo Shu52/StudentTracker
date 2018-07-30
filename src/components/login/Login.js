@@ -84,27 +84,28 @@ export default class Login extends Component {
         })
         //beginning of create studentExercises
         .then(()=>{
+            console.log("inside of create studentExercises")
             API.getAll("exercises")
-            .then(exercises => this.setState({ exercises }))
-            .then(()=>{
-                let counter =0;
-                this.state.exercises.map(studentExercises=>{
+            
+            .then((exercises)=>{
+                console.log("after exercises set state")
+                
+                exercises.map((exercise)=>{
+                    console.log("inside map")
                         let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-                        studentId = studentId.Id;
+                        // studentId = studentId;
                         console.log("studentId", studentId)
+                        let studentExercises = {
+                            studentId:studentId,
+                            exerciseId:exercise.id,
+                            githubLink: "",
+                            complete: false,
+                            stuck: false,
+                            feedback: ""
+                        }    
+                        API.postStudentExercises(studentExercises)                                    
                         
-                        API.postStudentExercises(
-                            {
-                                studentId:studentId,
-                                exerciseId:counter,
-                                githubLink: "",
-                                complete: false,
-                                stuck: false,
-                                feedback: ""
-                            }                            
-                        )
-                        .then(e =>e.json())
-                        this.setState(counter++)
+                    
                     }
                 )
             }

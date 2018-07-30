@@ -4,16 +4,20 @@ import { Collapse } from 'reactstrap';
 export default class ExerciseCard extends Component{
 state ={
     studentExercises:[],
-    collapse:false
+    collapse:false,
+    feedback:""
 }
+
 //add studentExercise properties
 toggle() {
     this.setState({ collapse: !this.state.collapse });
   }
-componentDidMount() {
-    API.getOne("studentExercises","0")
-    .then(studentExercises => this.setState({ studentExercises }))
-  }
+  componentDidMount() {
+    let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+      API.getAll(`studentExercises?studentId=${studentId}`)
+    //   http://localhost:5002/studentExercises?studentId=1
+      .then(studentExercises => this.setState({ studentExercises }))
+    }
     handleFieldChange = evt => {
         console.log("inside handle field change")
       const stateToChange = {};
@@ -21,29 +25,35 @@ componentDidMount() {
       this.setState(stateToChange);
     };
     handlePatch = e =>{
+        
         e.preventDefault()
         console.log("inside patch")
         const patchGithubLink={githubLink:this.state.githubLink}
+        
         API.patchItem("studentExercises","0", patchGithubLink).then(console.log(patchGithubLink))
     }
     handleChecked = (evt,checkbox) =>{
+        let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
         // if(checkbox === "checkBox1"){
-
-        //     this.setState({checkBox1:!this.state.checkBox1})
-        //     // set state value = opposite of current value
-        // }
-    const stateToChange = {...this.state.studentExercises, [checkbox]:!this.state.studentExercises[checkbox]};
-    // console.log("state",this.state.studentExercises)
-    //   stateToChange.studentExercises[evt.target.id]= this.state.checkBox1;
-      this.setState({studentExercises:stateToChange});
-      API.patchItem("studentExercises","0", stateToChange).then(console.log(stateToChange))
-    }
-    handleEditPatch = e =>{
-        e.preventDefault()
-        // console.log("parent", e)
-        const patchFeedback={feedback:this.state.feedback}
-        API.patchItem("studentExercises","0", patchFeedback).then(console.log(patchFeedback))
-    }
+            
+            //     this.setState({checkBox1:!this.state.checkBox1})
+            //     // set state value = opposite of current value
+            // }
+            const stateToChange = {...this.state.studentExercises, [checkbox]:!this.state.studentExercises[checkbox]};
+            // console.log("state",this.state.studentExercises)
+            //   stateToChange.studentExercises[evt.target.id]= this.state.checkBox1;
+            this.setState({studentExercises:stateToChange});
+            API.patchItem("studentExercises",`${studentId}`, stateToChange).then(console.log(stateToChange))
+        }
+        handleEditPatch = e =>{
+            e.preventDefault()
+            let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+            // console.log("parent", e)
+            const patchFeedback={feedback:this.state.studentExercises.feedback}
+            // API.patchItem("studentExercises",`${studentId}`, patchFeedback).then(console.log(patchFeedback))
+            API.patchFeedback(`studentExercises?studentId=${studentId}&exerciseId=`,this.state.exercise.id, patchFeedback).then(console.log(patchFeedback))
+            // http://localhost:5002/studentExercises?studentId=3&exerciseId=1
+        }
 
     render(){
         return (
@@ -51,7 +61,7 @@ componentDidMount() {
                 <div className="card-body">
                     <h5 className="card-header" onClick={this.toggle.bind(this)}> 
                     {/* bind this instance of this to this.toggle */}
-                        {this.props.exercise.name}
+                        {this.props.studentExercises.exercise.name}
                     </h5>
                     <Collapse isOpen={this.state.collapse}>
                     <div className="control">
