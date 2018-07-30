@@ -3,3 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.green{
+  background-color:rgba(26, 180, 26, 0.829);
+}
+.gold{
+  background-color:rgba(255, 196, 0, 0.931);
+}

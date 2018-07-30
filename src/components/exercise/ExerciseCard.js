@@ -49,7 +49,8 @@ componentDidMount() {
         return (
             <div className="card" style={{width: `22rem`}}>
                 <div className="card-body">
-                    <h5 className="card-header" onClick={this.toggle.bind(this)}>
+                    <h5 className="card-header" onClick={this.toggle.bind(this)}> 
+                    {/* bind this instance of this to this.toggle */}
                         {this.props.exercise.name}
                     </h5>
                     <Collapse isOpen={this.state.collapse}>

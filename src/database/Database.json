@@ -19,6 +19,11 @@
       "name": "grady",
       "password": "password",
       "id": 3
+    },
+    {
+      "name": "jenn",
+      "password": "password",
+      "id": 4
     }
   ],
   "exercises": [

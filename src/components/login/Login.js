@@ -6,7 +6,15 @@ export default class Login extends Component {
     // Set initial component state
     state = {
         name: "",
-        password: ""
+        password: "",
+        exercises:[],
+        studentId:"",
+        exerciseId: 0,
+        githubLink: "",
+        complete: false,
+        stuck: false,
+        feedback: "",
+        counter: 0
     }
 
     // Update state whenever an input field is edited
@@ -33,7 +41,8 @@ export default class Login extends Component {
             alert("Empty value or incorrect password, try again")
             return
         }
-           else if(student[0].name === this.state.name){
+           else if(student[0].name === this.state.name && student[0].password === this.state.password)
+           {
             sessionStorage.setItem("currentUser", student[0].id)
             console.log("currentUser id", student[0].id, "currentUserName", student[0].name)
             localStorage.setItem(
@@ -41,9 +50,11 @@ export default class Login extends Component {
                 JSON.stringify({
                     name: this.state.name,
                     password: this.state.password
+                    
                 })
+                
             )
-
+            this.props.history.push("/");
            }          
 
        })
@@ -71,7 +82,38 @@ export default class Login extends Component {
             )
             this.props.history.push("/");
         })
-    }
+        //beginning of create studentExercises
+        .then(()=>{
+            API.getAll("exercises")
+            .then(exercises => this.setState({ exercises }))
+            .then(()=>{
+                let counter =0;
+                this.state.exercises.map(studentExercises=>{
+                        let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+                        studentId = studentId.Id;
+                        console.log("studentId", studentId)
+                        
+                        API.postStudentExercises(
+                            {
+                                studentId:studentId,
+                                exerciseId:counter,
+                                githubLink: "",
+                                complete: false,
+                                stuck: false,
+                                feedback: ""
+                            }                            
+                        )
+                        .then(e =>e.json())
+                        this.setState(counter++)
+                    }
+                )
+            }
+                )
+            }
+        )
+            
+        }
+
 
     render() {
         return (

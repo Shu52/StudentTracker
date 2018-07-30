@@ -43,5 +43,16 @@ const ApiManager = Object.create({},{
           );
         }
       },
+      postStudentExercises: {
+        value: (theObject) => {
+          return fetch("http://localhost:5002/studentExercises", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(theObject)
+          });
+        }
+      }//end of post studentExercises
     })//end of object.create
     export default ApiManager;
