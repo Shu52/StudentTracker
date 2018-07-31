@@ -43,7 +43,7 @@ toggle() {
             // console.log("state",this.state.studentExercises)
             //   stateToChange.studentExercises[evt.target.id]= this.state.checkBox1;
             this.setState({studentExercises:stateToChange});
-            API.patchItem("studentExercises",`${studentId}`, stateToChange).then(console.log(stateToChange))
+            API.patchItem("studentExercises",`${this.props.studentExercises.id}`, stateToChange).then(console.log(stateToChange))
         }
         handleEditPatch = e =>{
             e.preventDefault()

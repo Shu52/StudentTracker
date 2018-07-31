@@ -93,6 +93,60 @@
       "id": 5
     },
     {
+      "0": {
+        "studentId": 1,
+        "exerciseId": 0,
+        "githubLink": "",
+        "complete": false,
+        "stuck": false,
+        "feedback": "",
+        "id": 1
+      },
+      "1": {
+        "studentId": 1,
+        "exerciseId": 1,
+        "githubLink": "",
+        "complete": false,
+        "stuck": false,
+        "feedback": "",
+        "id": 2
+      },
+      "2": {
+        "studentId": 1,
+        "exerciseId": 2,
+        "githubLink": "",
+        "complete": false,
+        "stuck": false,
+        "feedback": "",
+        "id": 3
+      },
+      "3": {
+        "studentId": 1,
+        "exerciseId": 3,
+        "githubLink": "",
+        "complete": false,
+        "stuck": false,
+        "feedback": "",
+        "id": 4
+      },
+      "4": {
+        "studentId": 1,
+        "exerciseId": 4,
+        "githubLink": "",
+        "complete": false,
+        "stuck": false,
+        "feedback": "",
+        "id": 5
+      },
+      "5": {
+        "studentId": 1,
+        "exerciseId": 5,
+        "githubLink": "stuff",
+        "complete": false,
+        "stuck": false,
+        "feedback": "change it to something else",
+        "id": 6
+      },
       "studentId": 1,
       "exerciseId": 5,
       "githubLink": "stuff",
