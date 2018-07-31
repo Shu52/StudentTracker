@@ -1,14 +1,14 @@
 {
   "students": [
     {
-      "id": 0,
+      "id": 1,
       "name": "test",
       "password": "password"
     }
   ],
   "exercises": [
     {
-      "id": 0,
+      "id": 6,
       "name": "cli Create"
     },
     {
@@ -34,7 +34,7 @@
   ],
   "studentExercises": [
     {
-      "id": 0,
+      "id": 1,
       "studentId": 0,
       "exerciseId": 0,
       "githubLink": "",
