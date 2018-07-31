@@ -35,8 +35,8 @@
   "studentExercises": [
     {
       "id": 1,
-      "studentId": 0,
-      "exerciseId": 0,
+      "studentId": 1,
+      "exerciseId": 1,
       "githubLink": "",
       "complete": false,
       "stuck": false,
