@@ -51,7 +51,7 @@ const ApiManager = Object.create({},{
               "Content-Type": "application/json"
             },
             body: JSON.stringify(theObject)
-          });
+          }).then(e=>e.json())
         }
       },//end of post studentExercises
       patchFeedback: {

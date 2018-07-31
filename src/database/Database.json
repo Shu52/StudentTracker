@@ -1,19 +1,34 @@
 {
   "students": [
     {
-      "id": 0,
+      "id": 1,
       "name": "test",
       "password": "password"
     },
     {
-      "name": "shusajid@gmail.com",
+      "name": "componentdidmount",
       "password": "password",
-      "id": 1
+      "id": 2
+    },
+    {
+      "name": "render",
+      "password": "password",
+      "id": 3
+    },
+    {
+      "name": "David",
+      "password": "password",
+      "id": 4
+    },
+    {
+      "name": "Kristen",
+      "password": "password",
+      "id": 5
     }
   ],
   "exercises": [
     {
-      "id": 0,
+      "id": 6,
       "name": "cli Create"
     },
     {
@@ -39,26 +54,17 @@
   ],
   "studentExercises": [
     {
-      "id": 0,
-      "studentId": 0,
-      "exerciseId": 0,
+      "id": 1,
+      "studentId": 1,
+      "exerciseId": 1,
       "githubLink": "",
       "complete": false,
       "stuck": false,
       "feedback": ""
     },
     {
-      "studentId": 1,
-      "exerciseId": 0,
-      "githubLink": "",
-      "complete": false,
-      "stuck": false,
-      "feedback": "",
-      "id": 1
-    },
-    {
-      "studentId": 1,
-      "exerciseId": 1,
+      "studentId": 2,
+      "exerciseId": 6,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -66,8 +72,8 @@
       "id": 2
     },
     {
-      "studentId": 1,
-      "exerciseId": 2,
+      "studentId": 2,
+      "exerciseId": 1,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -75,8 +81,8 @@
       "id": 3
     },
     {
-      "studentId": 1,
-      "exerciseId": 3,
+      "studentId": 2,
+      "exerciseId": 2,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -84,7 +90,7 @@
       "id": 4
     },
     {
-      "studentId": 1,
+      "studentId": 2,
       "exerciseId": 4,
       "githubLink": "",
       "complete": false,
@@ -93,67 +99,157 @@
       "id": 5
     },
     {
-      "0": {
-        "studentId": 1,
-        "exerciseId": 0,
-        "githubLink": "",
-        "complete": false,
-        "stuck": false,
-        "feedback": "",
-        "id": 1
-      },
-      "1": {
-        "studentId": 1,
-        "exerciseId": 1,
-        "githubLink": "",
-        "complete": false,
-        "stuck": false,
-        "feedback": "",
-        "id": 2
-      },
-      "2": {
-        "studentId": 1,
-        "exerciseId": 2,
-        "githubLink": "",
-        "complete": false,
-        "stuck": false,
-        "feedback": "",
-        "id": 3
-      },
-      "3": {
-        "studentId": 1,
-        "exerciseId": 3,
-        "githubLink": "",
-        "complete": false,
-        "stuck": false,
-        "feedback": "",
-        "id": 4
-      },
-      "4": {
-        "studentId": 1,
-        "exerciseId": 4,
-        "githubLink": "",
-        "complete": false,
-        "stuck": false,
-        "feedback": "",
-        "id": 5
-      },
-      "5": {
-        "studentId": 1,
-        "exerciseId": 5,
-        "githubLink": "stuff",
-        "complete": false,
-        "stuck": false,
-        "feedback": "change it to something else",
-        "id": 6
-      },
-      "studentId": 1,
-      "exerciseId": 5,
-      "githubLink": "stuff",
+      "studentId": 2,
+      "exerciseId": 3,
+      "githubLink": "",
       "complete": false,
       "stuck": false,
-      "feedback": "change it to something else",
+      "feedback": "",
       "id": 6
+    },
+    {
+      "studentId": 2,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 7
+    },
+    {
+      "studentId": 3,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 8
+    },
+    {
+      "studentId": 3,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 9
+    },
+    {
+      "studentId": 3,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 10
+    },
+    {
+      "studentId": 3,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 11
+    },
+    {
+      "studentId": 3,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 12
+    },
+    {
+      "studentId": 3,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 13
+    },
+    {
+      "studentId": 4,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 14
+    },
+    {
+      "studentId": 4,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 15
+    },
+    {
+      "studentId": 4,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 16
+    },
+    {
+      "studentId": 5,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 17
+    },
+    {
+      "studentId": 5,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 18
+    },
+    {
+      "studentId": 5,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 19
+    },
+    {
+      "studentId": 5,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 20
+    },
+    {
+      "studentId": 5,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 21
+    },
+    {
+      "studentId": 5,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 22
     }
   ]
 }

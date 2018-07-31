@@ -6,18 +6,19 @@ state ={
     studentExercises:[],
     collapse:false,
     feedback:"",
+    conditionGreen:false
 }
 
 //add studentExercise properties
 toggle() {
     this.setState({ collapse: !this.state.collapse });
   }
-  componentDidMount() {
-    let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-      API.getAll(`studentExercises?studentId=${studentId}`)
-    //   http://localhost:5002/studentExercises?studentId=1
-      .then(studentExercises => this.setState({ studentExercises }))
-    }
+//   componentDidMount() {
+//     let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+//       API.getAll(`studentExercises?studentId=${studentId}`)
+//     //   http://localhost:5002/studentExercises?studentId=1
+//       .then(studentExercises => this.setState({ studentExercises }))
+//     }
     handleFieldChange = evt => {
         console.log("inside handle field change")
       const stateToChange = {};
@@ -33,21 +34,27 @@ toggle() {
         API.patchItem("studentExercises",`${this.props.studentExercises.id}`, patchGithubLink).then(console.log(patchGithubLink))
     }
     handleChecked = (evt,checkbox) =>{
-        let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+        // let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
         // if(checkbox === "checkBox1"){
             
             //     this.setState({checkBox1:!this.state.checkBox1})
             //     // set state value = opposite of current value
             // }
-            const stateToChange = {...this.state.studentExercises, [checkbox]:!this.state.studentExercises[checkbox]};
             // console.log("state",this.state.studentExercises)
             //   stateToChange.studentExercises[evt.target.id]= this.state.checkBox1;
-            this.setState({studentExercises:stateToChange});
-            API.patchItem("studentExercises",`${this.props.studentExercises.id}`, stateToChange).then(console.log(stateToChange))
+            console.log("checkbox",checkbox)
+            if(checkbox==="complete"){
+                const stateToChange = {...this.state.studentExercises, [checkbox]:!this.state.studentExercises[checkbox]};
+            this.setState({
+                            studentExercises:stateToChange,
+                            conditionGreen: !this.state.condition
+                        });
+            API.patchItem("studentExercises",`${this.props.studentExercises.id}`, stateToChange)
         }
+    }//end of if
         handleEditPatch = e =>{
             e.preventDefault()
-            let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+            // let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
             console.log("studentExercises", this.props.studentExercises.exercise.id)
             const patchFeedback={feedback:this.state.feedback}
             // API.patchItem("studentExercises",`${studentId}`, patchFeedback).then(console.log(patchFeedback))
@@ -61,8 +68,9 @@ toggle() {
         return (
             <div className="card" style={{width: `22rem`}}>
                 <div className="card-body">
-                    <h5 className="card-header" onClick={this.toggle.bind(this)}> 
-                    {/* bind this instance of this to this.toggle */}
+                    <h5 className= {this.state.conditionGreen?"card-header green":"card-header"}
+                     onClick={this.toggle.bind(this)}> 
+                    {/* bind this instance of this to this.toggle, change className on toggle of checkboxes */}
                         {this.props.studentExercises.exercise.name}
                     </h5>
                     <Collapse isOpen={this.state.collapse}>

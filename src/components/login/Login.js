@@ -80,7 +80,6 @@ export default class Login extends Component {
                     password: this.state.password
                 })
             )
-            this.props.history.push("/");
         })
         //beginning of create studentExercises
         .then(()=>{
@@ -88,32 +87,51 @@ export default class Login extends Component {
             API.getAll("exercises")
             
             .then((exercises)=>{
-                console.log("after exercises set state")
+                console.log("after exercises set state",exercises)
                 
-                exercises.map((exercise)=>{
+                let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+                let fetchArray =  exercises.map((exercise)=>{
                     console.log("inside map")
-                        let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-                        // studentId = studentId;
-                        console.log("studentId", studentId)
-                        let studentExercises = {
-                            studentId:studentId,
-                            exerciseId:exercise.id,
-                            githubLink: "",
-                            complete: false,
-                            stuck: false,
-                            feedback: ""
-                        }    
-                        API.postStudentExercises(studentExercises)                                    
-                        
-                    
-                    }
-                )
-            }
-                )
-            }
-        )
+                    let studentExercises = {
+                        studentId:studentId,
+                        exerciseId:exercise.id,
+                        githubLink: "",
+                        complete: false,
+                        stuck: false,
+                        feedback: ""
+                    }  
+                    // return ()=>API.postStudentExercises(studentExercises)
+                    return fetch("http://localhost:5002/studentExercises", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(studentExercises)
+                    }).then(e=>e.json())
+                })
+                
+                console.log("fetchArray",fetchArray)
+                Promise.all(fetchArray).then(files=>{
+                    files.forEach (file=>{
+                        process(file.json());
+                    })
+                })//end of 1st promiseAll .then
+                    .catch((error)=>console.log(error))
+
+                    let process = (prom)=>
+                    console.log("prom",prom)
+                // this.props.history.push("/");
+            }//end of .then(exercises)  
             
-        }
+        )                                 
+    }   
+    
+        )
+    }    
+           
+        
+            
+        
 
 
     render() {
