@@ -95,10 +95,10 @@
     {
       "studentId": 1,
       "exerciseId": 5,
-      "githubLink": "",
+      "githubLink": "stuff",
       "complete": false,
       "stuck": false,
-      "feedback": "",
+      "feedback": "change it to something else",
       "id": 6
     }
   ]

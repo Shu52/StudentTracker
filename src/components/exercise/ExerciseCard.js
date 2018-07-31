@@ -5,7 +5,7 @@ export default class ExerciseCard extends Component{
 state ={
     studentExercises:[],
     collapse:false,
-    feedback:""
+    feedback:"",
 }
 
 //add studentExercise properties
@@ -30,7 +30,7 @@ toggle() {
         console.log("inside patch")
         const patchGithubLink={githubLink:this.state.githubLink}
         
-        API.patchItem("studentExercises","0", patchGithubLink).then(console.log(patchGithubLink))
+        API.patchItem("studentExercises",`${this.props.studentExercises.id}`, patchGithubLink).then(console.log(patchGithubLink))
     }
     handleChecked = (evt,checkbox) =>{
         let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
@@ -48,14 +48,16 @@ toggle() {
         handleEditPatch = e =>{
             e.preventDefault()
             let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-            // console.log("parent", e)
-            const patchFeedback={feedback:this.state.studentExercises.feedback}
+            console.log("studentExercises", this.props.studentExercises.exercise.id)
+            const patchFeedback={feedback:this.state.feedback}
             // API.patchItem("studentExercises",`${studentId}`, patchFeedback).then(console.log(patchFeedback))
-            API.patchFeedback(`studentExercises?studentId=${studentId}&exerciseId=`,this.state.exercise.id, patchFeedback).then(console.log(patchFeedback))
-            // http://localhost:5002/studentExercises?studentId=3&exerciseId=1
-        }
-
+            // API.getOneRoute(`studentExercises/${this.props.studentExercises.id}`).then(console.log(patchFeedback)).then(()=>
+            API.patchFeedback(`studentExercises/${this.props.studentExercises.id}`, patchFeedback).then(console.log(patchFeedback))
+         
+        // )
+    }
     render(){
+        
         return (
             <div className="card" style={{width: `22rem`}}>
                 <div className="card-body">
@@ -111,7 +113,7 @@ toggle() {
             </div>
                 <button type="button" 
                 className="btn btn-dark btn-sm"
-                onClick = {this.handleEditPatch}
+                onClick = {this.handleEditPatch.bind(this)}
                 >Submit Feedback
                 </button>
         </div>

@@ -55,8 +55,8 @@ const ApiManager = Object.create({},{
         }
       },//end of post studentExercises
       patchFeedback: {
-        value: (route,exerciseId, theObject) => {
-          return fetch(`http://localhost:5002/${route}`, exerciseId,
+        value: (route, theObject) => {
+          return fetch(`http://localhost:5002/${route}`,
           {
             // http://localhost:5002/studentExercises?studentId=3&exerciseId=1
             method: "PATCH",
@@ -67,5 +67,12 @@ const ApiManager = Object.create({},{
           });
         }
       },//end of patch
+      getOneRoute: {
+        value: (route) => {
+          return fetch(`http://localhost:5002/${route}`).then(e =>
+            e.json()
+          );
+        }
+      },
     })//end of object.create
     export default ApiManager;
