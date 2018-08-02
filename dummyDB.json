@@ -1,42 +1,42 @@
 {
   "students": [
     {
-      "id": 0,
+      "id": 1,
       "name": "test",
       "password": "password"
     }
   ],
   "exercises": [
     {
-      "id": 0,
+      "id": 1,
       "name": "cli Create"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Git Aliases"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Git Function"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Congressional district"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Congressional district Challenge"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Congressional district Advanced Challenge"
     }
   ],
   "studentExercises": [
     {
-      "id": 0,
-      "studentId": 0,
-      "exerciseId": 0,
+      "id": 1,
+      "studentId": 1,
+      "exerciseId": 1,
       "githubLink": "",
       "complete": false,
       "stuck": false,
