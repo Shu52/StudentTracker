@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import API from "../../APIManger"
+// import AppViews from "../../ApplicationViews"
 
 export default class Login extends Component {
 
@@ -13,8 +14,7 @@ export default class Login extends Component {
         githubLink: "",
         complete: false,
         stuck: false,
-        feedback: "",
-        counter: 0
+        feedback: ""
     }
 
     // Update state whenever an input field is edited
@@ -26,7 +26,7 @@ export default class Login extends Component {
 
     // Simplistic handler for login submit
     handleLogin = (e) => {
-        e.preventDefault()
+        // e.preventDefault()
 
         /*
             For now, just store the name and password that
@@ -45,7 +45,7 @@ export default class Login extends Component {
            {
             sessionStorage.setItem("currentUser", student[0].id)
             console.log("currentUser id", student[0].id, "currentUserName", student[0].name)
-            localStorage.setItem(
+            sessionStorage.setItem(
                 "credentials",
                 JSON.stringify({
                     name: this.state.name,
@@ -62,36 +62,37 @@ export default class Login extends Component {
         this.props.history.push("/");
     }
     registerStudent =(e) =>{
-        e.preventDefault();
+        // e.preventDefault();
         //call to post student
+        console.log("in register student")
         API.postStudent({
             name: this.state.name,
             password: this.state.password
         })
         .then(e => e.json())
         .then((response)=>{
-           sessionStorage.setItem("currentUser", response.id)
+            sessionStorage.setItem("currentUser", response.id)
             console.log("responseId", response.id)
-
-            localStorage.setItem(
+            
+            sessionStorage.setItem(
                 "credentials",
                 JSON.stringify({
                     name: this.state.name,
                     password: this.state.password
                 })
             )
-        })
+        })//function to change tableBuilt to true pass tablebuilt as prop to 
         //beginning of create studentExercises
         .then(()=>{
-            console.log("inside of create studentExercises")
+            // console.log("inside of create studentExercises")
             API.getAll("exercises")
             
             .then((exercises)=>{
-                console.log("after exercises set state",exercises)
+                // console.log("after exercises set state",exercises)
                 
                 let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
                 let fetchArray =  exercises.map((exercise)=>{
-                    console.log("inside map")
+                    
                     let studentExercises = {
                         studentId:studentId,
                         exerciseId:exercise.id,
@@ -100,6 +101,8 @@ export default class Login extends Component {
                         stuck: false,
                         feedback: ""
                     }  
+                    
+                
                     // return ()=>API.postStudentExercises(studentExercises)
                     return fetch("http://localhost:5002/studentExercises", {
                         method: "POST",
@@ -107,26 +110,30 @@ export default class Login extends Component {
                             "Content-Type": "application/json"
                         },
                         body: JSON.stringify(studentExercises)
-                    }).then(e=>e.json())
-                })
+                    })
+                })//end of map
                 
-                console.log("fetchArray",fetchArray)
+
                 Promise.all(fetchArray).then(files=>{
+                    debugger
                     files.forEach (file=>{
                         process(file.json());
                     })
                 })//end of 1st promiseAll .then
+                .then(()=>{
+                    const stateToChange ={tableBuilt:!this.props.tableBuilt}
+                    this.props.tableBuiltToggle(stateToChange)
+                    this.props.history.push("/");
+                })
                     .catch((error)=>console.log(error))
 
-                    let process = (prom)=>
-                    console.log("prom",prom)
-                // this.props.history.push("/");
+                
             }//end of .then(exercises)  
             
         )                                 
     }   
     
-        )
+) 
     }    
            
         
@@ -135,6 +142,7 @@ export default class Login extends Component {
 
 
     render() {
+        // console.log("props",this.props)
         return (
             <React.Fragment>
             <form onSubmit={this.handleLogin}>

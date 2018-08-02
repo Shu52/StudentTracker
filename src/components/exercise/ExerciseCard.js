@@ -6,7 +6,8 @@ state ={
     studentExercises:[],
     collapse:false,
     feedback:"",
-    conditionGreen:false
+    conditionGreen:false,
+    
 }
 
 //add studentExercise properties
