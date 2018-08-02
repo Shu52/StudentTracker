@@ -115,9 +115,9 @@ export default class Login extends Component {
                 
 
                 Promise.all(fetchArray).then(files=>{
-                    debugger
+                    
                     files.forEach (file=>{
-                        process(file.json());
+                        (file.json());
                     })
                 })//end of 1st promiseAll .then
                 .then(()=>{

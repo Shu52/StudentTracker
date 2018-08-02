@@ -3,28 +3,29 @@ import API from "../../APIManger";
 import { Collapse } from 'reactstrap';
 export default class ExerciseCard extends Component{
 state ={
-    studentExercises:[],
+    
     collapse:false,
-    feedback:"",
     conditionGreen:false,
+    feedback:this.props.studentExercises.feedback,
+    complete:this.props.studentExercises.complete,
+    stuck:this.props.studentExercises.stuck
     
 }
-
 //add studentExercise properties
 toggle() {
     this.setState({ collapse: !this.state.collapse });
-  }
+}
 //   componentDidMount() {
-//     let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-//       API.getAll(`studentExercises?studentId=${studentId}`)
-//     //   http://localhost:5002/studentExercises?studentId=1
-//       .then(studentExercises => this.setState({ studentExercises }))
-//     }
+    //     let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+    //       API.getAll(`studentExercises?studentId=${studentId}`)
+    //     //   http://localhost:5002/studentExercises?studentId=1
+    //       .then(studentExercises => this.setState({ studentExercises }))
+    //     }
     handleFieldChange = evt => {
         console.log("inside handle field change")
-      const stateToChange = {};
-      stateToChange[evt.target.id] = evt.target.value;
-      this.setState(stateToChange);
+        const stateToChange = {};
+        stateToChange[evt.target.id] = evt.target.value;
+        this.setState(stateToChange);
     };
     handlePatch = e =>{
         
@@ -43,16 +44,30 @@ toggle() {
             // }
             // console.log("state",this.state.studentExercises)
             //   stateToChange.studentExercises[evt.target.id]= this.state.checkBox1;
-            console.log("checkbox",checkbox)
+            console.log("checkbox id is",checkbox)
             if(checkbox==="complete"){
-                const stateToChange = {...this.state.studentExercises, [checkbox]:!this.state.studentExercises[checkbox]};
-            this.setState({
-                            studentExercises:stateToChange,
-                            conditionGreen: !this.state.condition
-                        });
-            API.patchItem("studentExercises",`${this.props.studentExercises.id}`, stateToChange)
+                
+                console.log("value of complete before change",this.state.complete)
+                let stateToChange = {complete:!this.state.complete};
+                
+                this.setState({
+                    complete:!this.state.complete,
+                    // conditionGreen: !this.state.condition
+                });
+                API.patchItem("studentExercises",`${this.props.studentExercises.id}`, stateToChange)
+            }//end of if
+            if(checkbox==="stuck"){
+                
+                console.log("value of stuck before change",this.state.stuck)
+                let stateToChange = {stuck:!this.state.stuck};
+                
+                this.setState({
+                    stuck:!this.state.stuck,
+                    // conditionGreen: !this.state.condition
+                });
+                API.patchItem("studentExercises",`${this.props.studentExercises.id}`, stateToChange)
+            }
         }
-    }//end of if
         handleEditPatch = e =>{
             e.preventDefault()
             // let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
@@ -61,12 +76,13 @@ toggle() {
             // API.patchItem("studentExercises",`${studentId}`, patchFeedback).then(console.log(patchFeedback))
             // API.getOneRoute(`studentExercises/${this.props.studentExercises.id}`).then(console.log(patchFeedback)).then(()=>
             API.patchFeedback(`studentExercises/${this.props.studentExercises.id}`, patchFeedback).then(console.log(patchFeedback))
-         
-        // )
-    }
-    render(){
-        
-        return (
+            
+            // )
+        }
+        render(){
+            console.log("render complete",this.state.complete)
+            
+            return (
             <div className="card" style={{width: `22rem`}}>
                 <div className="card-body">
                     <h5 className= {this.state.conditionGreen?"card-header green":"card-header"}
@@ -92,10 +108,10 @@ toggle() {
                <label htmlFor="completeBox">Complete</label>
 
                <input type="checkbox" 
+                        checked ={this.state.complete}
                         name ="completeBox" 
                         id = "complete"
                         onChange={(e)=>this.handleChecked(e,"complete")}
-                        checked ={this.state.studentExercises.complete||false}
                         />
 
                <label htmlFor="stuckBox" >Stuck</label>
@@ -104,7 +120,7 @@ toggle() {
                         name ="stuckBox" 
                         id ="stuck" 
                         onChange={(e)=>this.handleChecked(e,"stuck")}
-                        checked ={this.state.studentExercises.stuck||false}
+                        checked ={this.state.stuck}
                         />
                </div>
             <div className="input-group">
@@ -116,6 +132,8 @@ toggle() {
                             aria-label="Feedback" 
                             id="feedback"
                             onChange={this.handleFieldChange}
+                            value={this.state.feedback}
+                            placeholder={this.props.feedback}
                             >
                 </textarea>
 

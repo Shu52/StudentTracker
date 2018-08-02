@@ -11,13 +11,9 @@ state = {
 //componentdidupdate (prevState) tableBuilt=true wrapped 
 componentDidMount() {
   // if (this.props.tableBuilt === false) {
-    console.log("in did mount")
-    debugger
     let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
     API.getAll(`studentExercises?studentId=${studentId}&_expand=exercise`)
-    .then(studentExercises => {
-      console.log(studentExercises)
-      this.setState({ studentExercises })})
+    .then(studentExercises => {this.setState({ studentExercises })})
   // }
 }
 
