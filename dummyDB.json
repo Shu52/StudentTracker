@@ -30,6 +30,274 @@
     {
       "id": 6,
       "name": "Congressional district Advanced Challenge"
+    },
+    {
+      "id":7,
+      "name":"css-selectors"
+    },
+    {
+      "id":8,
+      "name":"ChickenMonkey"
+    },
+    {
+      "id":9,
+      "name":"Battle of the Bands"
+    },
+    {
+      "id":10,
+      "name":"Overly Excited"
+    },
+    {
+      "id":11,
+      "name":"Stacking Words"
+    },
+    {
+      "id":12,
+      "name":"Adding Conditions to the Loop"
+    },
+    {
+      "id":13,
+      "name":"Even More Excited"
+    },
+    {
+      "id":14,
+      "name":"Function Arguments"
+    },
+    {
+      "id":15,
+      "name":"Another Sentence"
+    },
+    {
+      "id":16,
+      "name":"Challenge: Arrow Functions"
+    },
+    {
+      "id":17,
+      "name":"Cookout"
+    },
+    {
+      "id":18,
+      "name":"C is for Cookie"
+    },
+    {
+      "id":19,
+      "name":"Conjunction Function"
+    },
+    {
+      "id":20,
+      "name":"Mod Squad"
+    },
+    {
+      "id":21,
+      "name":"Simon Says"
+    },
+    {
+      "id":22,
+      "name":"Advanced Challenge: Lambda Llama"
+    },
+    {
+      "id":23,
+      "name":"Elizabeth Sanger"
+    },
+    {
+      "id":24,
+      "name":"Challenge Elizabeth Sanger"
+    },
+    {
+      "id":25,
+      "name":"Advanced Challenge Elizabeth Sanger"
+    },
+    {
+      "id":26,
+      "name":"Object.create()"
+    },
+    {
+      "id":27,
+      "name":"Challenge Object.create()"
+    },
+    {
+      "id":28,
+      "name":"Advanced Challenge Object.create()"
+    },
+    {
+      "id":29,
+      "name":"Query the DOM with querySelector()"
+    },
+    {
+      "id":30,
+      "name":"Home Inventory Data"
+    },
+    {
+      "id":31,
+      "name":"DOM Component Creation Challenge"
+    },
+    {
+      "id":32,
+      "name":"Advanced Challenge DOM Component Creation Challenge"
+    },
+    {
+      "id":33,
+      "name":"Document Fragment"
+    },
+    {
+      "id":34,
+      "name":"Financial advisor"
+    },
+    {
+      "id":35,
+      "name":"Challenge Financial advisor"
+    },
+    {
+      "id":36,
+      "name":"Advance Challenge Financial advisor"
+    },
+    {
+      "id":37,
+      "name":"Planets"
+    },
+    {
+      "id":38,
+      "name":"Spam, Spam, Spam, Spam"
+    },
+    {
+      "id":38,
+      "name":"Challenge: Chaining Methods"
+    },
+    {
+      "id":39,
+      "name":"Advanced Challenge: Car Dealership"
+    },
+    {
+      "id":40,
+      "name":"Powers"
+    },
+    {
+      "id":41,
+      "name":"Challenge: Dynamic Cards"
+    },
+    {
+      "id":42,
+      "name":"Challenge: Drag & Drop"
+    },
+    {
+      "id":43,
+      "name":"Linting Your Personal Site"
+    },
+    {
+      "id":44,
+      "name":"Contact List"
+    },
+    {
+      "id":45,
+      "name":"Product Ordering"
+    },
+    {
+      "id":46,
+      "name":"Home Inventory Single Page Application"
+    },
+    {
+      "id":47,
+      "name":"The Song List"
+    },
+    {
+      "id":48,
+      "name":"Small Business"
+    },
+    {
+      "id":49,
+      "name":"Challenge: Follow the Money"
+    },
+    {
+      "id":50,
+      "name":"Advanced Challenge: Honest Abe API"
+    },
+    {
+      "id":51,
+      "name":"Kennel Locations"
+    },
+    {
+      "id":52,
+      "name":"Displaying Locations"
+    },
+    {
+      "id":53,
+      "name":"Displaying Animals"
+    },
+    {
+      "id":54,
+      "name":"Challenge: Animal Owners"
+    },
+    {
+      "id":55,
+      "name":"Updating the Kennel Component"
+    },
+    {
+      "id":56,
+      "name":"Owners List"
+    },
+    {
+      "id":57,
+      "name":"Refactor ApplicationViews"
+    },
+    {
+      "id":58,
+      "name":"Advanced Challenge: Search your Data"
+    },
+    {
+      "id":59,
+      "name":"Fire Employees"
+    },
+    {
+      "id":60,
+      "name":"Remove Owners"
+    },
+    {
+      "id":61,
+      "name":"All Resource Managers"
+    },
+    {
+      "id":62,
+      "name":"Challenge: Refactor Delete"
+    },
+    {
+      "id":63,
+      "name":"Advanced Challenge: The Abstract Artist"
+    },
+    {
+      "id":64,
+      "name":"All the Details"
+    },
+    {
+      "id":65,
+      "name":"Adding Employees and Owners"
+    },
+    {
+      "id":66,
+      "name":"Advanced Challenge: Editing Animals"
+    },
+    {
+      "id":67,
+      "name":"No Content for You!"
+    },
+    {
+      "id":68,
+      "name":"Fun Challenge: Remember Me"
+    },
+    {
+      "id":69,
+      "name":"Employees per Location"
+    },
+    {
+      "id":70,
+      "name":"Type Check your Application"
+    },
+    {
+      "id":71,
+      "name":"Advanced Exercise: Validating Object Properties"
+    },
+    {
+      "id":72,
+      "name":"Challenge: Custom Validation"
     }
   ],
   "studentExercises": [
