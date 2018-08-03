@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../../APIManger";
-import { Collapse } from 'reactstrap';
+import { Collapse,Card,CardBody,CardHeader,Button,Form, Label, Input, FormGroup,InputGroup, InputGroupText, InputGroupAddon, Container } from 'reactstrap';
 export default class ExerciseCard extends Component{
 state ={
     
@@ -8,7 +8,8 @@ state ={
     conditionGreen:false,
     feedback:this.props.studentExercises.feedback,
     complete:this.props.studentExercises.complete,
-    stuck:this.props.studentExercises.stuck
+    stuck:this.props.studentExercises.stuck,
+    githubLink:this.props.studentExercises.githubLink
     
 }
 //add studentExercise properties
@@ -83,71 +84,92 @@ toggle() {
             console.log("render complete",this.state.complete)
             
             return (
-            <div className="card" style={{width: `22rem`}}>
-                <div className="card-body">
-                    <h5 className= {this.state.conditionGreen?"card-header green":"card-header"}
-                     onClick={this.toggle.bind(this)}> 
+
+<Container>
+    <Card>
+        <CardBody>
+                <CardHeader className= {this.state.conditionGreen?"card-header green":""}
+                                onClick={this.toggle.bind(this)}> 
                     {/* bind this instance of this to this.toggle, change className on toggle of checkboxes */}
                         {this.props.studentExercises.exercise.name}
-                    </h5>
-                    <Collapse isOpen={this.state.collapse}>
-                    <div className="control">
-                     <label htmlFor="url">GitHub Repo URL:</label>
-                        <input type="url" name="url" id="githubLink"
-                            placeholder="https://example.com"
-                            pattern="https://.*" 
+                </CardHeader>
+            <Collapse isOpen={this.state.collapse}>
+                <Form >
+                    <FormGroup>
+                    <InputGroup>
+                    <InputGroupAddon addonType="prepend">
+                <InputGroupText>GitHub Repo URL:</InputGroupText>
+            </InputGroupAddon>
+                        <Input type="url" 
+                            name="url" 
+                            id="githubLink"
+                            placeholder={this.props.githubLink}
+                            value={this.state.githubLink}
+                            // pattern="https://.*" 
                             size="18" 
                             onChange={this.handleFieldChange} 
-                            required />
-               <button type="button" 
+                            required 
+                            />
+                            </InputGroup>
+                    </FormGroup>
+               <Button type="button" 
                         className="btn btn-dark btn-sm"
                         onClick = {this.handlePatch} >
                         Add GitHub Repo
-                        </button>
-               <div>
-               <label htmlFor="completeBox">Complete</label>
+                        </Button>
+               <FormGroup check>
+               <Label for="completeBox">
 
-               <input type="checkbox" 
-                        checked ={this.state.complete}
+               <Input type="checkbox" 
+                        checked ={this.state.complete?"green":""}
                         name ="completeBox" 
                         id = "complete"
                         onChange={(e)=>this.handleChecked(e,"complete")}
-                        />
+                        />{' '}
+                    Complete
+                 </Label>   
+                 <br/>   
+               <Label check for="stuckBox" >
 
-               <label htmlFor="stuckBox" >Stuck</label>
-
-               <input type="checkbox" 
+               <Input type="checkbox" 
                         name ="stuckBox" 
                         id ="stuck" 
                         onChange={(e)=>this.handleChecked(e,"stuck")}
                         checked ={this.state.stuck}
-                        />
-               </div>
-            <div className="input-group">
-                <div className="input-group-prepend">
-                    <span className="input-group-text">Feedback</span>
-                </div>
-                <textarea 
+                />{' '}
+                Stuck 
+                </Label>
+                        </FormGroup>
+
+            
+                
+        <FormGroup>
+            <InputGroup>
+             <InputGroupAddon addonType="prepend">
+                <InputGroupText>Feedback</InputGroupText>
+            </InputGroupAddon>
+                <Input      type="textarea" 
+                            name="text" 
                             className="form-control" 
                             aria-label="Feedback" 
                             id="feedback"
                             onChange={this.handleFieldChange}
                             value={this.state.feedback}
-                            placeholder={this.props.feedback}
-                            >
-                </textarea>
+                            placeholder={this.props.feedback}  />
+            </InputGroup>
+        </FormGroup>
 
-            </div>
-                <button type="button" 
-                className="btn btn-dark btn-sm"
-                onClick = {this.handleEditPatch.bind(this)}
-                >Submit Feedback
-                </button>
-        </div>
-        </Collapse>        
-                    
-     </div>
-    </div>
+            
+                <Button type="button" 
+                        className="btn btn-dark btn-sm"
+                        onClick = {this.handleEditPatch.bind(this)}>
+                        Submit Feedback
+                </Button>
+            </Form>
+        </Collapse>            
+     </CardBody>
+    </Card>
+</Container>
     
         )
     

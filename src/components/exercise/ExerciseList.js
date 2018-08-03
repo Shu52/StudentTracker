@@ -31,7 +31,7 @@ render() {
   console.log("table built in Exercise list",this.props.tableBuilt)
   return (
     <React.Fragment>
-        <ul>
+        <ul className ="flexbox-container" >
           {this.state.studentExercises.map(exercise => (
             
             <ExerciseCard
