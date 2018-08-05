@@ -13,7 +13,6 @@ import "./index.css";
       </Router>,
       document.querySelector("#root")
     );
-    
     registerServiceWorker();
 
 

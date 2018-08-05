@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import API from "../../APIManger"
-// import AppViews from "../../ApplicationViews"
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 export default class Login extends Component {
 
@@ -26,12 +26,6 @@ export default class Login extends Component {
 
     // Simplistic handler for login submit
     handleLogin = (e) => {
-        // e.preventDefault()
-
-        /*
-            For now, just store the name and password that
-            the customer enters into local storage.
-        */
        API.checkOne(`students?name=${this.state.name}`).then(student =>{
            if(student.length === 0 || student[0].name !== this.state.name){
                alert("Empty value or incorrect/unregistered student, try again")
@@ -40,40 +34,30 @@ export default class Login extends Component {
            if(student.length === 0 || student[0].password !== this.state.password){
             alert("Empty value or incorrect password, try again")
             return
-        }
+            }
            else if(student[0].name === this.state.name && student[0].password === this.state.password)
            {
             sessionStorage.setItem("currentUser", student[0].id)
-            console.log("currentUser id", student[0].id, "currentUserName", student[0].name)
             sessionStorage.setItem(
                 "credentials",
                 JSON.stringify({
                     name: this.state.name,
                     password: this.state.password
-                    
-                })
-                
-            )
+                    })
+                )
             this.props.history.push("/");
-           }          
-
-       })
-        
+           }
+       }) 
         this.props.history.push("/");
     }
     registerStudent =(e) =>{
-        // e.preventDefault();
-        //call to post student
-        console.log("in register student")
         API.postStudent({
             name: this.state.name,
             password: this.state.password
         })
         .then(e => e.json())
         .then((response)=>{
-            sessionStorage.setItem("currentUser", response.id)
-            console.log("responseId", response.id)
-            
+            sessionStorage.setItem("currentUser", response.id)            
             sessionStorage.setItem(
                 "credentials",
                 JSON.stringify({
@@ -81,15 +65,11 @@ export default class Login extends Component {
                     password: this.state.password
                 })
             )
-        })//function to change tableBuilt to true pass tablebuilt as prop to 
+        })
         //beginning of create studentExercises
         .then(()=>{
-            // console.log("inside of create studentExercises")
             API.getAll("exercises")
-            
-            .then((exercises)=>{
-                // console.log("after exercises set state",exercises)
-                
+            .then((exercises)=>{                
                 let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
                 let fetchArray =  exercises.map((exercise)=>{
                     
@@ -113,59 +93,65 @@ export default class Login extends Component {
                     })
                 })//end of map
                 
-
-                Promise.all(fetchArray).then(files=>{
-                    
+                
+                Promise.all(fetchArray).then(files=>{                    
                     files.forEach (file=>{
                         (file.json());
                     })
-                })//end of 1st promiseAll .then
+                })
                 .then(()=>{
                     const stateToChange ={tableBuilt:!this.props.tableBuilt}
                     this.props.tableBuiltToggle(stateToChange)
                     this.props.history.push("/");
                 })
-                    .catch((error)=>console.log(error))
-
-                
-            }//end of .then(exercises)  
-            
-        )                                 
-    }   
-    
-) 
-    }    
-           
-        
-            
-        
-
+                    .catch((error)=>console.log(error))                
+            })//end of .then(exercises)                                    
+    })//end of create student exercises 
+}//end of register student   
 
     render() {
-        // console.log("props",this.props)
         return (
             <React.Fragment>
-            <form onSubmit={this.handleLogin}>
-                <h1 className="h3 mb-3 font-weight-normal text-center">Please sign in or Register</h1>
-                <label htmlFor="inputName">
+            <Form  className = "loginForm" onSubmit={this.handleLogin}>
+
+                <h1 className="h1-header">Please sign in or Register</h1>
+            <div className="form-styling">
+            <FormGroup>
+                <Label htmlFor="inputName">
                     Display Name
-                </label>
-                <input onChange={this.handleFieldChange} type="name"
+                </Label>
+
+                <Input onChange={this.handleFieldChange} type="name"
                        id="name"
                        placeholder="Display Name"
                        required="" autoFocus="" />
-                <label htmlFor="inputPassword">
+            </FormGroup>
+            <FormGroup>
+                <Label htmlFor="inputPassword">
                     Password
-                </label>
-                <input onChange={this.handleFieldChange} type="password"
+                </Label>
+
+                <Input onChange={this.handleFieldChange} type="password"
                        id="password"
                        placeholder="Password"
                        required="" />
-                <button type="submit" className="btn btn-primary">
-                    Sign in
-                </button>
-                <button type="button" className="btn btn-warning" onClick = {(e) => this.registerStudent(e)}>Register Account</button>
-            </form>
+            </FormGroup>
+            <div className = "loginButtons">
+                <Button type="submit"
+                        className="btn btn-warm"
+                        id ="signInBtn">
+                        Sign in
+                </Button>
+
+                <Button type="button" 
+                        className="btn btn-warm"
+                        id ="registerBtn" 
+                        onClick = {(e) => this.registerStudent(e)}>
+                        Register Account
+                </Button>
+            </div>
+            </div>
+            </Form>
             </React.Fragment>
         )
     }
