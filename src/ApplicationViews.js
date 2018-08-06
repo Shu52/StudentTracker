@@ -10,7 +10,6 @@ export default class ApplicationViews extends Component {
 
 tableBuiltToggle = (stateToChange)=>{    
         this.setState({tableBuilt:stateToChange})
-        console.log("Table from function", stateToChange)
     }
       isAuthenticated = () => sessionStorage.getItem("credentials") !== null
     

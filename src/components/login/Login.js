@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import API from "../../APIManger"
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+// , UncontrolledAlert
 
 export default class Login extends Component {
 
@@ -23,97 +24,107 @@ export default class Login extends Component {
         stateToChange[evt.target.id] = evt.target.value
         this.setState(stateToChange)
     }
-
+    
     // Simplistic handler for login submit
     handleLogin = (e) => {
-       API.checkOne(`students?name=${this.state.name}`).then(student =>{
-           if(student.length === 0 || student[0].name !== this.state.name){
-               alert("Empty value or incorrect/unregistered student, try again")
-               return
-           }
-           if(student.length === 0 || student[0].password !== this.state.password){
-            alert("Empty value or incorrect password, try again")
-            return
+        API.checkOne(`students?name=${this.state.name}`).then(student =>{
+            if(student.length === 0 || student[0].name.toLowerCase() !== this.state.name){
+                alert("Empty value or unregistered user, Please Register")
+                return
+               
             }
-           else if(student[0].name === this.state.name && student[0].password === this.state.password)
-           {
-            sessionStorage.setItem("currentUser", student[0].id)
-            sessionStorage.setItem(
-                "credentials",
-                JSON.stringify({
-                    name: this.state.name,
-                    password: this.state.password
+            if(student.length === 0 || student[0].password !== this.state.password){
+                alert("Empty value or incorrect password, try again" )
+            }
+            else if(student[0].name.toLowerCase() === this.state.name && student[0].password === this.state.password)
+            {
+                sessionStorage.setItem("currentUser", student[0].id)
+                sessionStorage.setItem(
+                    "credentials",
+                    JSON.stringify({
+                        name: this.state.name,
+                        password: this.state.password
                     })
                 )
-            this.props.history.push("/");
-           }
-       }) 
+                this.props.history.push("/");
+            }
+        }) 
         this.props.history.push("/");
     }
     registerStudent =(e) =>{
-        API.postStudent({
-            name: this.state.name,
-            password: this.state.password
-        })
-        .then(e => e.json())
-        .then((response)=>{
-            sessionStorage.setItem("currentUser", response.id)            
-            sessionStorage.setItem(
-                "credentials",
-                JSON.stringify({
-                    name: this.state.name,
+        API.checkOne(`students?name=${this.state.name.toLocaleLowerCase()}`).then(student =>{         
+            if( student.length === 0) {
+                
+                API.postStudent({
+                    name: this.state.name.toLowerCase(),
                     password: this.state.password
                 })
-            )
-        })
-        //beginning of create studentExercises
-        .then(()=>{
-            API.getAll("exercises")
-            .then((exercises)=>{                
-                let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-                let fetchArray =  exercises.map((exercise)=>{
-                    
-                    let studentExercises = {
-                        studentId:studentId,
-                        exerciseId:exercise.id,
-                        githubLink: "",
-                        complete: false,
-                        stuck: false,
-                        feedback: ""
-                    }  
-                    
-                
-                    // return ()=>API.postStudentExercises(studentExercises)
-                    return fetch("http://localhost:5002/studentExercises", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify(studentExercises)
-                    })
-                })//end of map
-                
-                
-                Promise.all(fetchArray).then(files=>{                    
-                    files.forEach (file=>{
-                        (file.json());
-                    })
+                .then(e => e.json())
+                .then((response)=>{
+                    sessionStorage.setItem("currentUser", response.id)            
+                    sessionStorage.setItem(
+                        "credentials",
+                        JSON.stringify({
+                            name: this.state.name,
+                            password: this.state.password
+                        })
+                    )
                 })
+                //beginning of create studentExercises
                 .then(()=>{
-                    const stateToChange ={tableBuilt:!this.props.tableBuilt}
-                    this.props.tableBuiltToggle(stateToChange)
+                    API.getAll("exercises")
+                    .then((exercises)=>{                
+                        let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
+                        let fetchArray =  exercises.map((exercise)=>{
+                            
+                            let studentExercises = {
+                                studentId:studentId,
+                                exerciseId:exercise.id,
+                                githubLink: "",
+                                complete: false,
+                                stuck: false,
+                                feedback: ""
+                            }  
+                            
+                            
+                            // return ()=>API.postStudentExercises(studentExercises)
+                            return fetch("http://localhost:5002/studentExercises", {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify(studentExercises)
+                            })
+                        })//end of map
+                        
+                        
+                        Promise.all(fetchArray).then(files=>{                    
+                            files.forEach (file=>{
+                                (file.json());
+                            })
+                        })
+                        .then(()=>{
+                            const stateToChange ={tableBuilt:!this.props.tableBuilt}
+                            this.props.tableBuiltToggle(stateToChange)
+                            this.props.history.push("/");
+                        })
+                        .catch((error)=>console.log(error))                
+                    })//end of .then(exercises)                                    
+                })//end of create student exercises 
+            }//end of else
+                else if(this.state.name.toLowerCase() === student[0].name){
+                    alert("User name is already registered or no username entered, try again")
                     this.props.history.push("/");
-                })
-                    .catch((error)=>console.log(error))                
-            })//end of .then(exercises)                                    
-    })//end of create student exercises 
-}//end of register student   
-
+                    return
+                }
+        })// end of checkOne
+    }//end of register student   
+    
     render() {
         return (
             <React.Fragment>
-            <Form  className = "loginForm" onSubmit={this.handleLogin}>
-
+                <Form  className = "loginForm" onSubmit={this.handleLogin}>
+                
                 <h1 className="h1-header">Please sign in or Register</h1>
             <div className="form-styling">
             <FormGroup>

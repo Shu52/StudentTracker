@@ -6,7 +6,6 @@ export default class ExerciseList extends Component {
 state = {
     exercises: [],
     studentExercises:[],
-    tableBuilt:this.props.tableBuilt
 }
 
 componentDidMount() {  
@@ -16,7 +15,6 @@ componentDidMount() {
 }
 
 render() {
-  console.log("table built in Exercise list",this.props.tableBuilt)
   return (
     <React.Fragment>
         <div className ="flexBox-container" >
