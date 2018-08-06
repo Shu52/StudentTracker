@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Login from "./components/login/Login"
 import StudentView from "./components/student/StudentView"
 
-//set state here pass into login, login will pass to studentview tablebuilt:boolean write function for table built
 export default class ApplicationViews extends Component {
         state ={
             tableBuilt: false
@@ -11,11 +10,7 @@ export default class ApplicationViews extends Component {
 
 tableBuiltToggle = (stateToChange)=>{    
         this.setState({tableBuilt:stateToChange})
-        console.log("Table from function", stateToChange)
     }
-
-
-    // Check if credentials are in local storage
       isAuthenticated = () => sessionStorage.getItem("credentials") !== null
     
       render() {
@@ -28,14 +23,7 @@ tableBuiltToggle = (stateToChange)=>{
             return <Login {...props} tableBuilt={this.state.tableBuilt} tableBuiltToggle ={this.tableBuiltToggle}/>
         }
     }} />
-    {/* <Route path ="/studentView" render={props => {
-            return <StudentView/>
-        }
-    }
-        />
-    <Route path="/login" component={Login} /> */}
-        
-        </React.Fragment>
+          </React.Fragment>
         )//end of return
     }//end of render
 }//end of class

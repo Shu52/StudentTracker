@@ -6,41 +6,25 @@ export default class ExerciseList extends Component {
 state = {
     exercises: [],
     studentExercises:[],
-    tableBuilt:this.props.tableBuilt
 }
-//componentdidupdate (prevState) tableBuilt=true wrapped 
-componentDidMount() {
-  // if (this.props.tableBuilt === false) {
+
+componentDidMount() {  
     let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
     API.getAll(`studentExercises?studentId=${studentId}&_expand=exercise`)
     .then(studentExercises => {this.setState({ studentExercises })})
-  // }
 }
 
-// componentDidUpdate(oldProps) {
-//   if(this.props.studentExercises.studentId !== oldProps.studentExercises.studentId) {
-//     let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-//     API.getAll(`studentExercises?studentId=${studentId}&_expand=exercise`)
-//   .then(studentExercises => this.setState({ studentExercises }))
-//     }
-//   }
-
-
-
 render() {
-  console.log("table built in Exercise list",this.props.tableBuilt)
   return (
     <React.Fragment>
-        <ul>
+        <div className ="flexBox-container" >
           {this.state.studentExercises.map(exercise => (
-            
             <ExerciseCard
               key={exercise.id}
-              studentExercises={exercise}
-              
+              studentExercises={exercise}              
             />
           ))}
-        </ul>
+        </div>
       </React.Fragment>
     );
   }
