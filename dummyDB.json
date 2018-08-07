@@ -1,9 +1,11 @@
 {
-  "students": [
+  "users": [
     {
       "id": 1,
       "name": "test",
-      "password": "password"
+      "password": "password",
+      "cohort":26,
+      "instructor":false
     }
   ],
   "exercises": [
@@ -303,7 +305,7 @@
   "studentExercises": [
     {
       "id": 1,
-      "studentId": 1,
+      "userId": 1,
       "exerciseId": 1,
       "githubLink": "",
       "complete": false,

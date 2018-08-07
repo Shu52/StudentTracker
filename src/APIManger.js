@@ -1,8 +1,8 @@
 const ApiManager = Object.create({},{
 
-    postStudent: {
+    postUser: {
         value: (theObject) => {
-          return fetch("http://localhost:5002/students", {
+          return fetch("http://localhost:5002/users", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -10,7 +10,7 @@ const ApiManager = Object.create({},{
             body: JSON.stringify(theObject)
           });
         }
-      },//end of postStudent
+      },//end of postUser
       getAll: {
         value: collectionName => {
           return fetch(`http://localhost:5002/${collectionName}`).then(e =>
@@ -58,7 +58,7 @@ const ApiManager = Object.create({},{
         value: (route, theObject) => {
           return fetch(`http://localhost:5002/${route}`,
           {
-            // http://localhost:5002/studentExercises?studentId=3&exerciseId=1
+            
             method: "PATCH",
             headers: {
               "Content-Type": "application/json"

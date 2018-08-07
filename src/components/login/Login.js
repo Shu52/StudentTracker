@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import API from "../../APIManger"
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, ButtonGroup } from 'reactstrap';
 // , UncontrolledAlert
 
 export default class Login extends Component {
@@ -15,7 +15,9 @@ export default class Login extends Component {
         githubLink: "",
         complete: false,
         stuck: false,
-        feedback: ""
+        feedback: "",
+        instructor:false,
+        cohort:0
     }
 
     // Update state whenever an input field is edited
@@ -24,10 +26,15 @@ export default class Login extends Component {
         stateToChange[evt.target.id] = evt.target.value
         this.setState(stateToChange)
     }
+    onRadioBtnClick= (num) =>{
+        if(num===1){this.setState({ instructor:false})}
+        if(num===2){this.setState({instructor:true})}
+        }
+    
     
     // Simplistic handler for login submit
     handleLogin = (e) => {
-        API.checkOne(`students?name=${this.state.name}`).then(student =>{
+        API.checkOne(`users?name=${this.state.name.toLowerCase()}`).then(student =>{
             if(student.length === 0 || student[0].name.toLowerCase() !== this.state.name){
                 alert("Empty value or unregistered user, Please Register")
                 return
@@ -43,7 +50,8 @@ export default class Login extends Component {
                     "credentials",
                     JSON.stringify({
                         name: this.state.name,
-                        password: this.state.password
+                        password: this.state.password,
+                        instructor:this.state.instructor
                     })
                 )
                 this.props.history.push("/");
@@ -51,13 +59,15 @@ export default class Login extends Component {
         }) 
         this.props.history.push("/");
     }
-    registerStudent =(e) =>{
-        API.checkOne(`students?name=${this.state.name.toLocaleLowerCase()}`).then(student =>{         
+    registerUser =(e) =>{
+        API.checkOne(`users?name=${this.state.name.toLocaleLowerCase()}`).then(student =>{         
             if( student.length === 0) {
                 
-                API.postStudent({
+                API.postUser({
                     name: this.state.name.toLowerCase(),
-                    password: this.state.password
+                    password: this.state.password,
+                    cohort:this.state.cohort,
+                    instructor:this.state.instructor
                 })
                 .then(e => e.json())
                 .then((response)=>{
@@ -66,7 +76,8 @@ export default class Login extends Component {
                         "credentials",
                         JSON.stringify({
                             name: this.state.name,
-                            password: this.state.password
+                            password: this.state.password,
+                            instructor:this.state.instructor
                         })
                     )
                 })
@@ -78,7 +89,7 @@ export default class Login extends Component {
                         let fetchArray =  exercises.map((exercise)=>{
                             
                             let studentExercises = {
-                                studentId:studentId,
+                                userId:studentId,
                                 exerciseId:exercise.id,
                                 githubLink: "",
                                 complete: false,
@@ -104,8 +115,6 @@ export default class Login extends Component {
                             })
                         })
                         .then(()=>{
-                            const stateToChange ={tableBuilt:!this.props.tableBuilt}
-                            this.props.tableBuiltToggle(stateToChange)
                             this.props.history.push("/");
                         })
                         .catch((error)=>console.log(error))                
@@ -147,6 +156,24 @@ export default class Login extends Component {
                        placeholder="Password"
                        required="" />
             </FormGroup>
+            <FormGroup>
+                <Label htmlFor="inputCohort">
+                    Cohort #
+                </Label>
+
+                <Input onChange={this.handleFieldChange} type="number"
+                       id="cohort"
+                       placeholder="cohort #"
+                       required="" />
+            </FormGroup>
+                <div>
+                <span><strong>Role</strong></span>
+          </div>
+            <ButtonGroup className = "radioBtns">
+          <Button id = "student" onClick={() => this.onRadioBtnClick(1)}>Student</Button>
+          <Button id = "instructor" onClick={() => this.onRadioBtnClick(2)} >Instructor</Button>
+          </ButtonGroup>
+
             <div className = "loginButtons">
                 <Button type="submit"
                         className="btn btn-warm"
@@ -157,7 +184,7 @@ export default class Login extends Component {
                 <Button type="button" 
                         className="btn btn-warm"
                         id ="registerBtn" 
-                        onClick = {(e) => this.registerStudent(e)}>
+                        onClick = {(e) => this.registerUser(e)}>
                         Register Account
                 </Button>
             </div>
