@@ -24,7 +24,7 @@ state ={
     handlePatch = e =>{
         e.preventDefault()
         const patchGithubLink={githubLink:this.state.githubLink}
-        API.patchItem("studentExercises",`${this.props.studentExercises.id}`, patchGithubLink).then(console.log(patchGithubLink))
+        API.patchItem("studentExercises",`${this.props.studentExercises.id}`, patchGithubLink)
     }
     handleChecked = (evt,checkbox) =>{
             if(checkbox==="complete"){
@@ -48,14 +48,13 @@ state ={
             const patchFeedback={feedback:this.state.feedback}
             API.patchFeedback(`studentExercises/${this.props.studentExercises.id}`, patchFeedback)           
             }
-    render(){            
+    render(){ 
+                   
             return (
             <Container>
                 <Card>
                     <CardBody>
-                            <CardHeader className= {this.state.conditionGreen?"card-header green":""}
-                                            onClick={this.toggle.bind(this)}> 
-                                {/* bind this instance of this to this.toggle, change className on toggle of checkboxes */}
+                            <CardHeader onClick={this.toggle.bind(this)}> 
                                     {this.props.studentExercises.exercise.name}
                             </CardHeader>
                         <Collapse isOpen={this.state.collapse}>
