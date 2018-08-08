@@ -1,11 +1,13 @@
 import { Route } from "react-router-dom";
 import React, { Component } from "react";
-import Login from "./components/login/Login"
-import StudentView from "./components/student/StudentView"
-import CompleteView from "./components/student/CompleteView"
-import StuckView from "./components/student/StuckView"
-import InstructorView from "./components/instructor/InstructorView"
+import Login from "./components/login/Login1";
+import StudentView from "./components/student/StudentView";
+import CompleteView from "./components/student/CompleteView";
+import StuckView from "./components/student/StuckView";
+import InstructorView from "./components/instructor/InstructorView";
 import ByStudent from "./components/instructor/ByStudent";
+import ByExercise from "./components/instructor/ByExercise";
+import Register from "./components/login/Register";
 // import { Nav, NavItem, NavLink } from 'reactstrap';
 export default class ApplicationViews extends Component {
       isAuthenticated = () => sessionStorage.getItem("credentials") !== null
@@ -37,6 +39,15 @@ export default class ApplicationViews extends Component {
         <Route path="/byStudent" render={(props) => {    
             return <ByStudent {...props} />
         }}/>
+
+        <Route path="/byExercise" render={(props) => {    
+            return <ByExercise {...props} />
+        }}/>
+
+        <Route path="/register" render = {(props) => {
+            return <Register {...props} />
+        }}/>
+
           </React.Fragment>
         )//end of return
     }//end of render

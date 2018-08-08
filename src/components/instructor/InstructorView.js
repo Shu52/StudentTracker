@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Navbar from "../../nav/NavbarInstrutor"
+import Navbar from "../../nav/NavbarInstructor"
 export default class StudentView extends Component {
    studentId  = JSON.parse(sessionStorage.getItem("credentials"));
 render() {
