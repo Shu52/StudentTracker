@@ -10,7 +10,7 @@ state = {
 
 componentDidMount() {  
     let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-    API.getAll(`studentExercises?studentId=${studentId}&complete=false&stuck=false&_expand=exercise`)
+    API.getAll(`studentExercises?userId=${studentId}&complete=false&stuck=false&_expand=exercise`)
     .then(studentExercises => {this.setState({ studentExercises })})
 }
 

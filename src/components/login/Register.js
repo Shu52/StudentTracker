@@ -3,7 +3,7 @@ import API from "../../APIManger"
 import { Button, Form, FormGroup, Label, Input, ButtonGroup } from 'reactstrap';
 // , UncontrolledAlert
 
-export default class Login extends Component {
+export default class Register extends Component {
 
     // Set initial component state
     state = {
@@ -27,42 +27,20 @@ export default class Login extends Component {
         this.setState(stateToChange)
     }
     onRadioBtnClick= (num) =>{
-        if(num===1){this.setState({ instructor:false})}
+        if(num===1){this.setState({instructor:false})}
         if(num===2){this.setState({instructor:true})}
         }
     
     
     // Simplistic handler for login submit
-    handleLogin = (e) => {
-        API.checkOne(`users?name=${this.state.name.toLowerCase()}`).then(student =>{
-            if(student.length === 0 || student[0].name.toLowerCase() !== this.state.name){
-                alert("Empty value or unregistered user, Please Register")
-                return
-               
-            }
-            if(student.length === 0 || student[0].password !== this.state.password){
-                alert("Empty value or incorrect password, try again" )
-            }
-            else if(student[0].name.toLowerCase() === this.state.name && student[0].password === this.state.password)
-            {
-                sessionStorage.setItem("currentUser", student[0].id)
-                sessionStorage.setItem(
-                    "credentials",
-                    JSON.stringify({
-                        name: this.state.name,
-                        password: this.state.password,
-                        instructor:this.state.instructor
-                    })
-                )
-                this.props.history.push("/");
-            }
-        }) 
-        this.props.history.push("/");
-    }
+
     registerUser =(e) =>{
-        API.checkOne(`users?name=${this.state.name.toLocaleLowerCase()}`).then(student =>{         
-            if( student.length === 0) {
-                
+
+        e.preventDefault()
+        API.checkOne(`users?name=${this.state.name.toLocaleLowerCase()}`).then(user =>{  
+            console.log("instructor?",user, "state instructor", this.state.instructor)
+            //will be undefined if new user     
+            if(!this.state.instructor) {
                 API.postUser({
                     name: this.state.name.toLowerCase(),
                     password: this.state.password,
@@ -120,21 +98,47 @@ export default class Login extends Component {
                         .catch((error)=>console.log(error))                
                     })//end of .then(exercises)                                    
                 })//end of create student exercises 
-            }//end of else
-                else if(this.state.name.toLowerCase() === student[0].name){
-                    alert("User name is already registered or no username entered, try again")
-                    this.props.history.push("/");
-                    return
+            }//end of if
+                else if(user.length > 0){
+                    if (this.state.name.toLowerCase() === user[0].name ){
+                            alert("User name is already registered or no username entered, try again")
+                            this.props.history.push("/");
+                            return
+                        }
                 }
-        })// end of checkOne
-    }//end of register student   
-    
+                 else if( this.state.name.length > 0 && this.state.instructor === true) {
+                
+                    API.postUser({
+                        name: this.state.name.toLowerCase(),
+                        password: this.state.password,
+                        cohort:this.state.cohort,
+                        instructor:this.state.instructor
+                    })
+                    .then(e => e.json())
+                    .then((response)=>{
+                        sessionStorage.setItem("currentUser", response.id)            
+                        sessionStorage.setItem(
+                            "credentials",
+                            JSON.stringify({
+                                name: this.state.name,
+                                password: this.state.password,
+                                instructor:this.state.instructor
+                            })
+                        )
+                    })
+                     
+                }//end of else
+                
+            })// end of checkOne
+            this.props.history.push("/");
+    }//end of register student 
+    // let boundregisterUser = registerUser.bind(this)  
     render() {
         return (
             <React.Fragment>
-                <Form  className = "loginForm" onSubmit={this.handleLogin}>
+                <Form  className = "loginForm" onSubmit={ this.registerUser}>
                 
-                <h1 className="h1-header">Please sign in or Register</h1>
+                <h1 className="h1-header">Please Register</h1>
             <div className="form-styling">
             <FormGroup>
                 <Label htmlFor="inputName">
@@ -175,16 +179,12 @@ export default class Login extends Component {
           </ButtonGroup>
 
             <div className = "loginButtons">
-                <Button type="submit"
-                        className="btn btn-warm"
-                        id ="signInBtn">
-                        Sign in
-                </Button>
+               
 
-                <Button type="button" 
+                <Button type="submit" 
                         className="btn btn-warm"
                         id ="registerBtn" 
-                        onClick = {(e) => this.registerUser(e)}>
+                        >
                         Register Account
                 </Button>
             </div>

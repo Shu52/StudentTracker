@@ -12,12 +12,12 @@ export default class CompleteView extends Component {
     
     componentDidMount() {  
         let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
-        API.getAll(`studentExercises?studentId=${studentId}&stuck=true&_expand=exercise`)
+        API.getAll(`studentExercises?userId=${studentId}&stuck=true&_expand=exercise`)
         .then(studentExercises => {this.setState({ studentExercises })})
     }
     
     render() {
-      console.log("completed view",this.state.studentExercises)
+      console.log("stuck view",this.state.studentExercises)
       return (
         <React.Fragment>
           <h1 className ="blockquote text-center">You can do it,<strong> {this.studentId.name} </strong>! We Believe in You!</h1>

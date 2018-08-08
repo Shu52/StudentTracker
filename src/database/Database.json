@@ -1,14 +1,116 @@
 {
-  "students": [
+  "users": [
     {
       "id": 1,
       "name": "test",
-      "password": "password"
+      "password": "password",
+      "cohort": 26,
+      "instructor": false
     },
     {
       "name": "shusajid@gmail.com",
       "password": "password",
+      "cohort": "26",
+      "instructor": false,
       "id": 2
+    },
+    {
+      "name": "sathvik",
+      "password": "password",
+      "cohort": "26",
+      "instructor": false,
+      "id": 3
+    },
+    {
+      "name": "emily",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 4
+    },
+    {
+      "name": "jisie",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 5
+    },
+    {
+      "name": "jordan",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 6
+    },
+    {
+      "name": "jordan!",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 7
+    },
+    {
+      "name": "instructor",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 8
+    },
+    {
+      "name": "jordan!!",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 9
+    },
+    {
+      "name": "instructor2",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 10
+    },
+    {
+      "name": "instrutor3",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 11
+    },
+    {
+      "name": "instructor7",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 12
+    },
+    {
+      "name": "instructor10",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 13
+    },
+    {
+      "name": "shusajid@gmail.cominstructor13",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 14
+    },
+    {
+      "name": "instructor20",
+      "password": "password",
+      "cohort": "26",
+      "instructor": true,
+      "id": 15
+    },
+    {
+      "name": "jewel",
+      "password": "password",
+      "cohort": "26",
+      "instructor": false,
+      "id": 16
     }
   ],
   "exercises": [
@@ -165,150 +267,150 @@
       "name": "Spam, Spam, Spam, Spam"
     },
     {
-      "id": 38,
+      "id": 39,
       "name": "Challenge: Chaining Methods"
     },
     {
-      "id": 39,
+      "id": 40,
       "name": "Advanced Challenge: Car Dealership"
     },
     {
-      "id": 40,
+      "id": 41,
       "name": "Powers"
     },
     {
-      "id": 41,
+      "id": 42,
       "name": "Challenge: Dynamic Cards"
     },
     {
-      "id": 42,
+      "id": 43,
       "name": "Challenge: Drag & Drop"
     },
     {
-      "id": 43,
+      "id": 44,
       "name": "Linting Your Personal Site"
     },
     {
-      "id": 44,
+      "id": 45,
       "name": "Contact List"
     },
     {
-      "id": 45,
+      "id": 46,
       "name": "Product Ordering"
     },
     {
-      "id": 46,
+      "id": 47,
       "name": "Home Inventory Single Page Application"
     },
     {
-      "id": 47,
+      "id": 48,
       "name": "The Song List"
     },
     {
-      "id": 48,
+      "id": 49,
       "name": "Small Business"
     },
     {
-      "id": 49,
+      "id": 50,
       "name": "Challenge: Follow the Money"
     },
     {
-      "id": 50,
+      "id": 51,
       "name": "Advanced Challenge: Honest Abe API"
     },
     {
-      "id": 51,
+      "id": 52,
       "name": "Kennel Locations"
     },
     {
-      "id": 52,
+      "id": 53,
       "name": "Displaying Locations"
     },
     {
-      "id": 53,
+      "id": 54,
       "name": "Displaying Animals"
     },
     {
-      "id": 54,
+      "id": 55,
       "name": "Challenge: Animal Owners"
     },
     {
-      "id": 55,
+      "id": 56,
       "name": "Updating the Kennel Component"
     },
     {
-      "id": 56,
+      "id": 57,
       "name": "Owners List"
     },
     {
-      "id": 57,
+      "id": 58,
       "name": "Refactor ApplicationViews"
     },
     {
-      "id": 58,
+      "id": 59,
       "name": "Advanced Challenge: Search your Data"
     },
     {
-      "id": 59,
+      "id": 60,
       "name": "Fire Employees"
     },
     {
-      "id": 60,
+      "id": 61,
       "name": "Remove Owners"
     },
     {
-      "id": 61,
+      "id": 62,
       "name": "All Resource Managers"
     },
     {
-      "id": 62,
+      "id": 63,
       "name": "Challenge: Refactor Delete"
     },
     {
-      "id": 63,
+      "id": 64,
       "name": "Advanced Challenge: The Abstract Artist"
     },
     {
-      "id": 64,
+      "id": 65,
       "name": "All the Details"
     },
     {
-      "id": 65,
+      "id": 66,
       "name": "Adding Employees and Owners"
     },
     {
-      "id": 66,
+      "id": 67,
       "name": "Advanced Challenge: Editing Animals"
     },
     {
-      "id": 67,
+      "id": 68,
       "name": "No Content for You!"
     },
     {
-      "id": 68,
+      "id": 69,
       "name": "Fun Challenge: Remember Me"
     },
     {
-      "id": 69,
+      "id": 70,
       "name": "Employees per Location"
     },
     {
-      "id": 70,
+      "id": 71,
       "name": "Type Check your Application"
     },
     {
-      "id": 71,
+      "id": 72,
       "name": "Advanced Exercise: Validating Object Properties"
     },
     {
-      "id": 72,
+      "id": 73,
       "name": "Challenge: Custom Validation"
     }
   ],
   "studentExercises": [
     {
       "id": 1,
-      "studentId": 1,
+      "userId": 1,
       "exerciseId": 1,
       "githubLink": "",
       "complete": false,
@@ -316,7 +418,7 @@
       "feedback": ""
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 1,
       "githubLink": "",
       "complete": true,
@@ -325,8 +427,8 @@
       "id": 2
     },
     {
-      "studentId": 2,
-      "exerciseId": 2,
+      "userId": 2,
+      "exerciseId": 3,
       "githubLink": "",
       "complete": true,
       "stuck": false,
@@ -334,8 +436,8 @@
       "id": 3
     },
     {
-      "studentId": 2,
-      "exerciseId": 5,
+      "userId": 2,
+      "exerciseId": 2,
       "githubLink": "",
       "complete": true,
       "stuck": false,
@@ -343,8 +445,8 @@
       "id": 4
     },
     {
-      "studentId": 2,
-      "exerciseId": 3,
+      "userId": 2,
+      "exerciseId": 4,
       "githubLink": "",
       "complete": true,
       "stuck": false,
@@ -352,25 +454,25 @@
       "id": 5
     },
     {
-      "studentId": 2,
-      "exerciseId": 4,
+      "userId": 2,
+      "exerciseId": 5,
       "githubLink": "",
-      "complete": true,
-      "stuck": false,
+      "complete": false,
+      "stuck": true,
       "feedback": "",
       "id": 6
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 6,
       "githubLink": "",
-      "complete": true,
-      "stuck": false,
+      "complete": false,
+      "stuck": true,
       "feedback": "",
       "id": 7
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 7,
       "githubLink": "",
       "complete": false,
@@ -379,8 +481,8 @@
       "id": 8
     },
     {
-      "studentId": 2,
-      "exerciseId": 8,
+      "userId": 2,
+      "exerciseId": 10,
       "githubLink": "",
       "complete": false,
       "stuck": true,
@@ -388,25 +490,25 @@
       "id": 9
     },
     {
-      "studentId": 2,
-      "exerciseId": 9,
+      "userId": 2,
+      "exerciseId": 8,
       "githubLink": "",
       "complete": false,
-      "stuck": true,
+      "stuck": false,
       "feedback": "",
       "id": 10
     },
     {
-      "studentId": 2,
-      "exerciseId": 10,
+      "userId": 2,
+      "exerciseId": 9,
       "githubLink": "",
       "complete": false,
-      "stuck": true,
+      "stuck": false,
       "feedback": "",
       "id": 11
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 11,
       "githubLink": "",
       "complete": false,
@@ -415,7 +517,7 @@
       "id": 12
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 12,
       "githubLink": "",
       "complete": false,
@@ -424,7 +526,7 @@
       "id": 13
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 13,
       "githubLink": "",
       "complete": false,
@@ -433,7 +535,7 @@
       "id": 14
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 14,
       "githubLink": "",
       "complete": false,
@@ -442,7 +544,7 @@
       "id": 15
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 15,
       "githubLink": "",
       "complete": false,
@@ -451,7 +553,7 @@
       "id": 16
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 16,
       "githubLink": "",
       "complete": false,
@@ -460,7 +562,7 @@
       "id": 17
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 17,
       "githubLink": "",
       "complete": false,
@@ -469,7 +571,7 @@
       "id": 18
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 18,
       "githubLink": "",
       "complete": false,
@@ -478,8 +580,8 @@
       "id": 19
     },
     {
-      "studentId": 2,
-      "exerciseId": 22,
+      "userId": 2,
+      "exerciseId": 19,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -487,8 +589,8 @@
       "id": 20
     },
     {
-      "studentId": 2,
-      "exerciseId": 23,
+      "userId": 2,
+      "exerciseId": 20,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -496,8 +598,8 @@
       "id": 21
     },
     {
-      "studentId": 2,
-      "exerciseId": 19,
+      "userId": 2,
+      "exerciseId": 21,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -505,8 +607,8 @@
       "id": 22
     },
     {
-      "studentId": 2,
-      "exerciseId": 20,
+      "userId": 2,
+      "exerciseId": 22,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -514,8 +616,8 @@
       "id": 23
     },
     {
-      "studentId": 2,
-      "exerciseId": 21,
+      "userId": 2,
+      "exerciseId": 23,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -523,7 +625,7 @@
       "id": 24
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 24,
       "githubLink": "",
       "complete": false,
@@ -532,7 +634,7 @@
       "id": 25
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 25,
       "githubLink": "",
       "complete": false,
@@ -541,7 +643,7 @@
       "id": 26
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 26,
       "githubLink": "",
       "complete": false,
@@ -550,7 +652,7 @@
       "id": 27
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 27,
       "githubLink": "",
       "complete": false,
@@ -559,7 +661,7 @@
       "id": 28
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 28,
       "githubLink": "",
       "complete": false,
@@ -568,7 +670,7 @@
       "id": 29
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 29,
       "githubLink": "",
       "complete": false,
@@ -577,7 +679,7 @@
       "id": 30
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 30,
       "githubLink": "",
       "complete": false,
@@ -586,7 +688,7 @@
       "id": 31
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 31,
       "githubLink": "",
       "complete": false,
@@ -595,7 +697,7 @@
       "id": 32
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 32,
       "githubLink": "",
       "complete": false,
@@ -604,7 +706,7 @@
       "id": 33
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 33,
       "githubLink": "",
       "complete": false,
@@ -613,7 +715,7 @@
       "id": 34
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 34,
       "githubLink": "",
       "complete": false,
@@ -622,7 +724,7 @@
       "id": 35
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 35,
       "githubLink": "",
       "complete": false,
@@ -631,7 +733,7 @@
       "id": 36
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 36,
       "githubLink": "",
       "complete": false,
@@ -640,7 +742,7 @@
       "id": 37
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 37,
       "githubLink": "",
       "complete": false,
@@ -649,7 +751,7 @@
       "id": 38
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 38,
       "githubLink": "",
       "complete": false,
@@ -658,7 +760,7 @@
       "id": 39
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 38,
       "githubLink": "",
       "complete": false,
@@ -667,7 +769,7 @@
       "id": 40
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 39,
       "githubLink": "",
       "complete": false,
@@ -676,7 +778,7 @@
       "id": 41
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 40,
       "githubLink": "",
       "complete": false,
@@ -685,7 +787,7 @@
       "id": 42
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 41,
       "githubLink": "",
       "complete": false,
@@ -694,7 +796,7 @@
       "id": 43
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 42,
       "githubLink": "",
       "complete": false,
@@ -703,7 +805,7 @@
       "id": 44
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 43,
       "githubLink": "",
       "complete": false,
@@ -712,7 +814,7 @@
       "id": 45
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 44,
       "githubLink": "",
       "complete": false,
@@ -721,7 +823,7 @@
       "id": 46
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 45,
       "githubLink": "",
       "complete": false,
@@ -730,7 +832,7 @@
       "id": 47
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 46,
       "githubLink": "",
       "complete": false,
@@ -739,7 +841,7 @@
       "id": 48
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 47,
       "githubLink": "",
       "complete": false,
@@ -748,8 +850,8 @@
       "id": 49
     },
     {
-      "studentId": 2,
-      "exerciseId": 48,
+      "userId": 2,
+      "exerciseId": 52,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -757,8 +859,8 @@
       "id": 50
     },
     {
-      "studentId": 2,
-      "exerciseId": 49,
+      "userId": 2,
+      "exerciseId": 48,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -766,8 +868,8 @@
       "id": 51
     },
     {
-      "studentId": 2,
-      "exerciseId": 50,
+      "userId": 2,
+      "exerciseId": 49,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -775,8 +877,8 @@
       "id": 52
     },
     {
-      "studentId": 2,
-      "exerciseId": 51,
+      "userId": 2,
+      "exerciseId": 50,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -784,8 +886,8 @@
       "id": 53
     },
     {
-      "studentId": 2,
-      "exerciseId": 52,
+      "userId": 2,
+      "exerciseId": 51,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -793,7 +895,7 @@
       "id": 54
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 53,
       "githubLink": "",
       "complete": false,
@@ -802,7 +904,7 @@
       "id": 55
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 54,
       "githubLink": "",
       "complete": false,
@@ -811,7 +913,7 @@
       "id": 56
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 55,
       "githubLink": "",
       "complete": false,
@@ -820,7 +922,7 @@
       "id": 57
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 56,
       "githubLink": "",
       "complete": false,
@@ -829,7 +931,7 @@
       "id": 58
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 57,
       "githubLink": "",
       "complete": false,
@@ -838,7 +940,7 @@
       "id": 59
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 58,
       "githubLink": "",
       "complete": false,
@@ -847,7 +949,7 @@
       "id": 60
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 59,
       "githubLink": "",
       "complete": false,
@@ -856,8 +958,8 @@
       "id": 61
     },
     {
-      "studentId": 2,
-      "exerciseId": 62,
+      "userId": 2,
+      "exerciseId": 60,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -865,8 +967,8 @@
       "id": 62
     },
     {
-      "studentId": 2,
-      "exerciseId": 63,
+      "userId": 2,
+      "exerciseId": 61,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -874,8 +976,8 @@
       "id": 63
     },
     {
-      "studentId": 2,
-      "exerciseId": 60,
+      "userId": 2,
+      "exerciseId": 62,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -883,8 +985,8 @@
       "id": 64
     },
     {
-      "studentId": 2,
-      "exerciseId": 61,
+      "userId": 2,
+      "exerciseId": 63,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -892,7 +994,7 @@
       "id": 65
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 64,
       "githubLink": "",
       "complete": false,
@@ -901,7 +1003,7 @@
       "id": 66
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 65,
       "githubLink": "",
       "complete": false,
@@ -910,8 +1012,8 @@
       "id": 67
     },
     {
-      "studentId": 2,
-      "exerciseId": 66,
+      "userId": 2,
+      "exerciseId": 70,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -919,8 +1021,8 @@
       "id": 68
     },
     {
-      "studentId": 2,
-      "exerciseId": 67,
+      "userId": 2,
+      "exerciseId": 66,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -928,8 +1030,8 @@
       "id": 69
     },
     {
-      "studentId": 2,
-      "exerciseId": 68,
+      "userId": 2,
+      "exerciseId": 67,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -937,8 +1039,8 @@
       "id": 70
     },
     {
-      "studentId": 2,
-      "exerciseId": 69,
+      "userId": 2,
+      "exerciseId": 68,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -946,8 +1048,8 @@
       "id": 71
     },
     {
-      "studentId": 2,
-      "exerciseId": 70,
+      "userId": 2,
+      "exerciseId": 69,
       "githubLink": "",
       "complete": false,
       "stuck": false,
@@ -955,7 +1057,7 @@
       "id": 72
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 71,
       "githubLink": "",
       "complete": false,
@@ -964,13 +1066,6583 @@
       "id": 73
     },
     {
-      "studentId": 2,
+      "userId": 2,
       "exerciseId": 72,
       "githubLink": "",
       "complete": false,
       "stuck": false,
       "feedback": "",
       "id": 74
+    },
+    {
+      "userId": 3,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 75
+    },
+    {
+      "userId": 3,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": true,
+      "feedback": "",
+      "id": 76
+    },
+    {
+      "userId": 3,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": true,
+      "stuck": false,
+      "feedback": "",
+      "id": 77
+    },
+    {
+      "userId": 3,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": true,
+      "feedback": "",
+      "id": 78
+    },
+    {
+      "userId": 3,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 79
+    },
+    {
+      "userId": 3,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 80
+    },
+    {
+      "userId": 3,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 81
+    },
+    {
+      "userId": 3,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 82
+    },
+    {
+      "userId": 3,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 83
+    },
+    {
+      "userId": 3,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 84
+    },
+    {
+      "userId": 3,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 85
+    },
+    {
+      "userId": 3,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 86
+    },
+    {
+      "userId": 3,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 87
+    },
+    {
+      "userId": 3,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 88
+    },
+    {
+      "userId": 3,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 89
+    },
+    {
+      "userId": 3,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 90
+    },
+    {
+      "userId": 3,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 91
+    },
+    {
+      "userId": 3,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 92
+    },
+    {
+      "userId": 3,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 93
+    },
+    {
+      "userId": 3,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 94
+    },
+    {
+      "userId": 3,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 95
+    },
+    {
+      "userId": 3,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 96
+    },
+    {
+      "userId": 3,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 97
+    },
+    {
+      "userId": 3,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 98
+    },
+    {
+      "userId": 3,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 99
+    },
+    {
+      "userId": 3,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 100
+    },
+    {
+      "userId": 3,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 101
+    },
+    {
+      "userId": 3,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 102
+    },
+    {
+      "userId": 3,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 103
+    },
+    {
+      "userId": 3,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 104
+    },
+    {
+      "userId": 3,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 105
+    },
+    {
+      "userId": 3,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 106
+    },
+    {
+      "userId": 3,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 107
+    },
+    {
+      "userId": 3,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 108
+    },
+    {
+      "userId": 3,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 109
+    },
+    {
+      "userId": 3,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 110
+    },
+    {
+      "userId": 3,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 111
+    },
+    {
+      "userId": 3,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 112
+    },
+    {
+      "userId": 3,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 113
+    },
+    {
+      "userId": 3,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 114
+    },
+    {
+      "userId": 3,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 115
+    },
+    {
+      "userId": 3,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 116
+    },
+    {
+      "userId": 3,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 117
+    },
+    {
+      "userId": 3,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 118
+    },
+    {
+      "userId": 3,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 119
+    },
+    {
+      "userId": 3,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 120
+    },
+    {
+      "userId": 3,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 121
+    },
+    {
+      "userId": 3,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 122
+    },
+    {
+      "userId": 3,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 123
+    },
+    {
+      "userId": 3,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 124
+    },
+    {
+      "userId": 3,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 125
+    },
+    {
+      "userId": 3,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 126
+    },
+    {
+      "userId": 3,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 127
+    },
+    {
+      "userId": 3,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 128
+    },
+    {
+      "userId": 3,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 129
+    },
+    {
+      "userId": 3,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 130
+    },
+    {
+      "userId": 3,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 131
+    },
+    {
+      "userId": 3,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 132
+    },
+    {
+      "userId": 3,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 133
+    },
+    {
+      "userId": 3,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 134
+    },
+    {
+      "userId": 3,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 135
+    },
+    {
+      "userId": 3,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 136
+    },
+    {
+      "userId": 3,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 137
+    },
+    {
+      "userId": 3,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 138
+    },
+    {
+      "userId": 3,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 139
+    },
+    {
+      "userId": 3,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 140
+    },
+    {
+      "userId": 3,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 141
+    },
+    {
+      "userId": 3,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 142
+    },
+    {
+      "userId": 3,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 143
+    },
+    {
+      "userId": 3,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 144
+    },
+    {
+      "userId": 3,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 145
+    },
+    {
+      "userId": 3,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 146
+    },
+    {
+      "userId": 3,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 147
+    },
+    {
+      "userId": 4,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 148
+    },
+    {
+      "userId": 4,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 149
+    },
+    {
+      "userId": 4,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 150
+    },
+    {
+      "userId": 4,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 151
+    },
+    {
+      "userId": 4,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 152
+    },
+    {
+      "userId": 4,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 153
+    },
+    {
+      "userId": 4,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 154
+    },
+    {
+      "userId": 4,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 155
+    },
+    {
+      "userId": 4,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 156
+    },
+    {
+      "userId": 4,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 157
+    },
+    {
+      "userId": 4,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 158
+    },
+    {
+      "userId": 4,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 159
+    },
+    {
+      "userId": 4,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 160
+    },
+    {
+      "userId": 4,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 161
+    },
+    {
+      "userId": 4,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 162
+    },
+    {
+      "userId": 4,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 163
+    },
+    {
+      "userId": 4,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 164
+    },
+    {
+      "userId": 4,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 165
+    },
+    {
+      "userId": 4,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 166
+    },
+    {
+      "userId": 4,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 167
+    },
+    {
+      "userId": 4,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 168
+    },
+    {
+      "userId": 4,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 169
+    },
+    {
+      "userId": 4,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 170
+    },
+    {
+      "userId": 4,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 171
+    },
+    {
+      "userId": 4,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 172
+    },
+    {
+      "userId": 4,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 173
+    },
+    {
+      "userId": 4,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 174
+    },
+    {
+      "userId": 4,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 175
+    },
+    {
+      "userId": 4,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 176
+    },
+    {
+      "userId": 4,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 177
+    },
+    {
+      "userId": 4,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 178
+    },
+    {
+      "userId": 4,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 179
+    },
+    {
+      "userId": 4,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 180
+    },
+    {
+      "userId": 4,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 181
+    },
+    {
+      "userId": 4,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 182
+    },
+    {
+      "userId": 4,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 183
+    },
+    {
+      "userId": 4,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 184
+    },
+    {
+      "userId": 4,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 185
+    },
+    {
+      "userId": 4,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 186
+    },
+    {
+      "userId": 4,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 187
+    },
+    {
+      "userId": 4,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 188
+    },
+    {
+      "userId": 4,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 189
+    },
+    {
+      "userId": 4,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 190
+    },
+    {
+      "userId": 4,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 191
+    },
+    {
+      "userId": 4,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 192
+    },
+    {
+      "userId": 4,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 193
+    },
+    {
+      "userId": 4,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 194
+    },
+    {
+      "userId": 4,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 195
+    },
+    {
+      "userId": 4,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 196
+    },
+    {
+      "userId": 4,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 197
+    },
+    {
+      "userId": 4,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 198
+    },
+    {
+      "userId": 4,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 199
+    },
+    {
+      "userId": 4,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 200
+    },
+    {
+      "userId": 4,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 201
+    },
+    {
+      "userId": 4,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 202
+    },
+    {
+      "userId": 4,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 203
+    },
+    {
+      "userId": 4,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 204
+    },
+    {
+      "userId": 4,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 205
+    },
+    {
+      "userId": 4,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 206
+    },
+    {
+      "userId": 4,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 207
+    },
+    {
+      "userId": 4,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 208
+    },
+    {
+      "userId": 4,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 209
+    },
+    {
+      "userId": 4,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 210
+    },
+    {
+      "userId": 4,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 211
+    },
+    {
+      "userId": 4,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 212
+    },
+    {
+      "userId": 4,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 213
+    },
+    {
+      "userId": 4,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 214
+    },
+    {
+      "userId": 4,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 215
+    },
+    {
+      "userId": 4,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 216
+    },
+    {
+      "userId": 4,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 217
+    },
+    {
+      "userId": 4,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 218
+    },
+    {
+      "userId": 4,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 219
+    },
+    {
+      "userId": 4,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 220
+    },
+    {
+      "userId": 5,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 221
+    },
+    {
+      "userId": 5,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 222
+    },
+    {
+      "userId": 5,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 223
+    },
+    {
+      "userId": 5,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 224
+    },
+    {
+      "userId": 5,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 225
+    },
+    {
+      "userId": 5,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 226
+    },
+    {
+      "userId": 5,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 227
+    },
+    {
+      "userId": 5,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 228
+    },
+    {
+      "userId": 5,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 229
+    },
+    {
+      "userId": 5,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 230
+    },
+    {
+      "userId": 5,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 231
+    },
+    {
+      "userId": 5,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 232
+    },
+    {
+      "userId": 5,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 233
+    },
+    {
+      "userId": 5,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 234
+    },
+    {
+      "userId": 5,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 235
+    },
+    {
+      "userId": 5,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 236
+    },
+    {
+      "userId": 5,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 237
+    },
+    {
+      "userId": 5,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 238
+    },
+    {
+      "userId": 5,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 239
+    },
+    {
+      "userId": 5,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 240
+    },
+    {
+      "userId": 5,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 241
+    },
+    {
+      "userId": 5,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 242
+    },
+    {
+      "userId": 5,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 243
+    },
+    {
+      "userId": 5,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 244
+    },
+    {
+      "userId": 5,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 245
+    },
+    {
+      "userId": 5,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 246
+    },
+    {
+      "userId": 5,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 247
+    },
+    {
+      "userId": 5,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 248
+    },
+    {
+      "userId": 5,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 249
+    },
+    {
+      "userId": 5,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 250
+    },
+    {
+      "userId": 5,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 251
+    },
+    {
+      "userId": 5,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 252
+    },
+    {
+      "userId": 5,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 253
+    },
+    {
+      "userId": 5,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 254
+    },
+    {
+      "userId": 5,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 255
+    },
+    {
+      "userId": 5,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 256
+    },
+    {
+      "userId": 5,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 257
+    },
+    {
+      "userId": 5,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 258
+    },
+    {
+      "userId": 5,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 259
+    },
+    {
+      "userId": 5,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 260
+    },
+    {
+      "userId": 5,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 261
+    },
+    {
+      "userId": 5,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 262
+    },
+    {
+      "userId": 5,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 263
+    },
+    {
+      "userId": 5,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 264
+    },
+    {
+      "userId": 5,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 265
+    },
+    {
+      "userId": 5,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 266
+    },
+    {
+      "userId": 5,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 267
+    },
+    {
+      "userId": 5,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 268
+    },
+    {
+      "userId": 5,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 269
+    },
+    {
+      "userId": 5,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 270
+    },
+    {
+      "userId": 5,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 271
+    },
+    {
+      "userId": 5,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 272
+    },
+    {
+      "userId": 5,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 273
+    },
+    {
+      "userId": 5,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 274
+    },
+    {
+      "userId": 5,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 275
+    },
+    {
+      "userId": 5,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 276
+    },
+    {
+      "userId": 5,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 277
+    },
+    {
+      "userId": 5,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 278
+    },
+    {
+      "userId": 5,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 279
+    },
+    {
+      "userId": 5,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 280
+    },
+    {
+      "userId": 5,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 281
+    },
+    {
+      "userId": 5,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 282
+    },
+    {
+      "userId": 5,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 283
+    },
+    {
+      "userId": 5,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 284
+    },
+    {
+      "userId": 5,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 285
+    },
+    {
+      "userId": 5,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 286
+    },
+    {
+      "userId": 5,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 287
+    },
+    {
+      "userId": 5,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 288
+    },
+    {
+      "userId": 5,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 289
+    },
+    {
+      "userId": 5,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 290
+    },
+    {
+      "userId": 5,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 291
+    },
+    {
+      "userId": 5,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 292
+    },
+    {
+      "userId": 5,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 293
+    },
+    {
+      "userId": 6,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 294
+    },
+    {
+      "userId": 6,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 295
+    },
+    {
+      "userId": 6,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 296
+    },
+    {
+      "userId": 6,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 297
+    },
+    {
+      "userId": 6,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 298
+    },
+    {
+      "userId": 6,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 299
+    },
+    {
+      "userId": 6,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 300
+    },
+    {
+      "userId": 6,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 301
+    },
+    {
+      "userId": 6,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 302
+    },
+    {
+      "userId": 6,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 303
+    },
+    {
+      "userId": 6,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 304
+    },
+    {
+      "userId": 6,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 305
+    },
+    {
+      "userId": 6,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 306
+    },
+    {
+      "userId": 6,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 307
+    },
+    {
+      "userId": 6,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 308
+    },
+    {
+      "userId": 6,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 309
+    },
+    {
+      "userId": 6,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 310
+    },
+    {
+      "userId": 6,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 311
+    },
+    {
+      "userId": 6,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 312
+    },
+    {
+      "userId": 6,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 313
+    },
+    {
+      "userId": 6,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 314
+    },
+    {
+      "userId": 6,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 315
+    },
+    {
+      "userId": 6,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 316
+    },
+    {
+      "userId": 6,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 317
+    },
+    {
+      "userId": 6,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 318
+    },
+    {
+      "userId": 6,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 319
+    },
+    {
+      "userId": 6,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 320
+    },
+    {
+      "userId": 6,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 321
+    },
+    {
+      "userId": 6,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 322
+    },
+    {
+      "userId": 6,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 323
+    },
+    {
+      "userId": 6,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 324
+    },
+    {
+      "userId": 6,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 325
+    },
+    {
+      "userId": 6,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 326
+    },
+    {
+      "userId": 6,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 327
+    },
+    {
+      "userId": 6,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 328
+    },
+    {
+      "userId": 6,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 329
+    },
+    {
+      "userId": 6,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 330
+    },
+    {
+      "userId": 6,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 331
+    },
+    {
+      "userId": 6,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 332
+    },
+    {
+      "userId": 6,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 333
+    },
+    {
+      "userId": 6,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 334
+    },
+    {
+      "userId": 6,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 335
+    },
+    {
+      "userId": 6,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 336
+    },
+    {
+      "userId": 6,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 337
+    },
+    {
+      "userId": 6,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 338
+    },
+    {
+      "userId": 6,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 339
+    },
+    {
+      "userId": 6,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 340
+    },
+    {
+      "userId": 6,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 341
+    },
+    {
+      "userId": 6,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 342
+    },
+    {
+      "userId": 6,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 343
+    },
+    {
+      "userId": 6,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 344
+    },
+    {
+      "userId": 6,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 345
+    },
+    {
+      "userId": 6,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 346
+    },
+    {
+      "userId": 6,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 347
+    },
+    {
+      "userId": 6,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 348
+    },
+    {
+      "userId": 6,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 349
+    },
+    {
+      "userId": 6,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 350
+    },
+    {
+      "userId": 6,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 351
+    },
+    {
+      "userId": 6,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 352
+    },
+    {
+      "userId": 6,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 353
+    },
+    {
+      "userId": 6,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 354
+    },
+    {
+      "userId": 6,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 355
+    },
+    {
+      "userId": 6,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 356
+    },
+    {
+      "userId": 6,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 357
+    },
+    {
+      "userId": 6,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 358
+    },
+    {
+      "userId": 6,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 359
+    },
+    {
+      "userId": 6,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 360
+    },
+    {
+      "userId": 6,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 361
+    },
+    {
+      "userId": 6,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 362
+    },
+    {
+      "userId": 6,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 363
+    },
+    {
+      "userId": 6,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 364
+    },
+    {
+      "userId": 6,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 365
+    },
+    {
+      "userId": 6,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 366
+    },
+    {
+      "userId": 7,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 367
+    },
+    {
+      "userId": 7,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 368
+    },
+    {
+      "userId": 7,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 369
+    },
+    {
+      "userId": 7,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 370
+    },
+    {
+      "userId": 7,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 371
+    },
+    {
+      "userId": 7,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 372
+    },
+    {
+      "userId": 7,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 373
+    },
+    {
+      "userId": 7,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 374
+    },
+    {
+      "userId": 7,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 375
+    },
+    {
+      "userId": 7,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 376
+    },
+    {
+      "userId": 7,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 377
+    },
+    {
+      "userId": 7,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 378
+    },
+    {
+      "userId": 7,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 379
+    },
+    {
+      "userId": 7,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 380
+    },
+    {
+      "userId": 7,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 381
+    },
+    {
+      "userId": 7,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 382
+    },
+    {
+      "userId": 7,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 383
+    },
+    {
+      "userId": 7,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 384
+    },
+    {
+      "userId": 7,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 385
+    },
+    {
+      "userId": 7,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 386
+    },
+    {
+      "userId": 7,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 387
+    },
+    {
+      "userId": 7,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 388
+    },
+    {
+      "userId": 7,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 389
+    },
+    {
+      "userId": 7,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 390
+    },
+    {
+      "userId": 7,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 391
+    },
+    {
+      "userId": 7,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 392
+    },
+    {
+      "userId": 7,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 393
+    },
+    {
+      "userId": 7,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 394
+    },
+    {
+      "userId": 7,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 395
+    },
+    {
+      "userId": 7,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 396
+    },
+    {
+      "userId": 7,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 397
+    },
+    {
+      "userId": 7,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 398
+    },
+    {
+      "userId": 7,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 399
+    },
+    {
+      "userId": 7,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 400
+    },
+    {
+      "userId": 7,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 401
+    },
+    {
+      "userId": 7,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 402
+    },
+    {
+      "userId": 7,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 403
+    },
+    {
+      "userId": 7,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 404
+    },
+    {
+      "userId": 7,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 405
+    },
+    {
+      "userId": 7,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 406
+    },
+    {
+      "userId": 7,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 407
+    },
+    {
+      "userId": 7,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 408
+    },
+    {
+      "userId": 7,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 409
+    },
+    {
+      "userId": 7,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 410
+    },
+    {
+      "userId": 7,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 411
+    },
+    {
+      "userId": 7,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 412
+    },
+    {
+      "userId": 7,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 413
+    },
+    {
+      "userId": 7,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 414
+    },
+    {
+      "userId": 7,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 415
+    },
+    {
+      "userId": 7,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 416
+    },
+    {
+      "userId": 7,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 417
+    },
+    {
+      "userId": 7,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 418
+    },
+    {
+      "userId": 7,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 419
+    },
+    {
+      "userId": 7,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 420
+    },
+    {
+      "userId": 7,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 421
+    },
+    {
+      "userId": 7,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 422
+    },
+    {
+      "userId": 7,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 423
+    },
+    {
+      "userId": 7,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 424
+    },
+    {
+      "userId": 7,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 425
+    },
+    {
+      "userId": 7,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 426
+    },
+    {
+      "userId": 7,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 427
+    },
+    {
+      "userId": 7,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 428
+    },
+    {
+      "userId": 7,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 429
+    },
+    {
+      "userId": 7,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 430
+    },
+    {
+      "userId": 7,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 431
+    },
+    {
+      "userId": 7,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 432
+    },
+    {
+      "userId": 7,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 433
+    },
+    {
+      "userId": 7,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 434
+    },
+    {
+      "userId": 7,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 435
+    },
+    {
+      "userId": 7,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 436
+    },
+    {
+      "userId": 7,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 437
+    },
+    {
+      "userId": 7,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 438
+    },
+    {
+      "userId": 7,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 439
+    },
+    {
+      "userId": 8,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 440
+    },
+    {
+      "userId": 8,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 441
+    },
+    {
+      "userId": 8,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 442
+    },
+    {
+      "userId": 8,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 443
+    },
+    {
+      "userId": 8,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 444
+    },
+    {
+      "userId": 8,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 445
+    },
+    {
+      "userId": 8,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 446
+    },
+    {
+      "userId": 8,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 447
+    },
+    {
+      "userId": 8,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 448
+    },
+    {
+      "userId": 8,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 449
+    },
+    {
+      "userId": 8,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 450
+    },
+    {
+      "userId": 8,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 451
+    },
+    {
+      "userId": 8,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 452
+    },
+    {
+      "userId": 8,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 453
+    },
+    {
+      "userId": 8,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 454
+    },
+    {
+      "userId": 8,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 455
+    },
+    {
+      "userId": 8,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 456
+    },
+    {
+      "userId": 8,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 457
+    },
+    {
+      "userId": 8,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 458
+    },
+    {
+      "userId": 8,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 459
+    },
+    {
+      "userId": 8,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 460
+    },
+    {
+      "userId": 8,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 461
+    },
+    {
+      "userId": 8,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 462
+    },
+    {
+      "userId": 8,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 463
+    },
+    {
+      "userId": 8,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 464
+    },
+    {
+      "userId": 8,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 465
+    },
+    {
+      "userId": 8,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 466
+    },
+    {
+      "userId": 8,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 467
+    },
+    {
+      "userId": 8,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 468
+    },
+    {
+      "userId": 8,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 469
+    },
+    {
+      "userId": 8,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 470
+    },
+    {
+      "userId": 8,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 471
+    },
+    {
+      "userId": 8,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 472
+    },
+    {
+      "userId": 8,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 473
+    },
+    {
+      "userId": 8,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 474
+    },
+    {
+      "userId": 8,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 475
+    },
+    {
+      "userId": 8,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 476
+    },
+    {
+      "userId": 8,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 477
+    },
+    {
+      "userId": 8,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 478
+    },
+    {
+      "userId": 8,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 479
+    },
+    {
+      "userId": 8,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 480
+    },
+    {
+      "userId": 8,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 481
+    },
+    {
+      "userId": 8,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 482
+    },
+    {
+      "userId": 8,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 483
+    },
+    {
+      "userId": 8,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 484
+    },
+    {
+      "userId": 8,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 485
+    },
+    {
+      "userId": 8,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 486
+    },
+    {
+      "userId": 8,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 487
+    },
+    {
+      "userId": 8,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 488
+    },
+    {
+      "userId": 8,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 489
+    },
+    {
+      "userId": 8,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 490
+    },
+    {
+      "userId": 8,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 491
+    },
+    {
+      "userId": 8,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 492
+    },
+    {
+      "userId": 8,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 493
+    },
+    {
+      "userId": 8,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 494
+    },
+    {
+      "userId": 8,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 495
+    },
+    {
+      "userId": 8,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 496
+    },
+    {
+      "userId": 8,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 497
+    },
+    {
+      "userId": 8,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 498
+    },
+    {
+      "userId": 8,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 499
+    },
+    {
+      "userId": 8,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 500
+    },
+    {
+      "userId": 8,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 501
+    },
+    {
+      "userId": 8,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 502
+    },
+    {
+      "userId": 8,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 503
+    },
+    {
+      "userId": 8,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 504
+    },
+    {
+      "userId": 8,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 505
+    },
+    {
+      "userId": 8,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 506
+    },
+    {
+      "userId": 8,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 507
+    },
+    {
+      "userId": 8,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 508
+    },
+    {
+      "userId": 8,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 509
+    },
+    {
+      "userId": 8,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 510
+    },
+    {
+      "userId": 8,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 511
+    },
+    {
+      "userId": 8,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 512
+    },
+    {
+      "userId": 9,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 513
+    },
+    {
+      "userId": 9,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 514
+    },
+    {
+      "userId": 9,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 515
+    },
+    {
+      "userId": 9,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 516
+    },
+    {
+      "userId": 9,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 517
+    },
+    {
+      "userId": 9,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 518
+    },
+    {
+      "userId": 9,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 519
+    },
+    {
+      "userId": 9,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 520
+    },
+    {
+      "userId": 9,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 521
+    },
+    {
+      "userId": 9,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 522
+    },
+    {
+      "userId": 9,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 523
+    },
+    {
+      "userId": 9,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 524
+    },
+    {
+      "userId": 9,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 525
+    },
+    {
+      "userId": 9,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 526
+    },
+    {
+      "userId": 9,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 527
+    },
+    {
+      "userId": 9,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 528
+    },
+    {
+      "userId": 9,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 529
+    },
+    {
+      "userId": 9,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 530
+    },
+    {
+      "userId": 9,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 531
+    },
+    {
+      "userId": 9,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 532
+    },
+    {
+      "userId": 9,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 533
+    },
+    {
+      "userId": 9,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 534
+    },
+    {
+      "userId": 9,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 535
+    },
+    {
+      "userId": 9,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 536
+    },
+    {
+      "userId": 9,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 537
+    },
+    {
+      "userId": 9,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 538
+    },
+    {
+      "userId": 9,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 539
+    },
+    {
+      "userId": 9,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 540
+    },
+    {
+      "userId": 9,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 541
+    },
+    {
+      "userId": 9,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 542
+    },
+    {
+      "userId": 9,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 543
+    },
+    {
+      "userId": 9,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 544
+    },
+    {
+      "userId": 9,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 545
+    },
+    {
+      "userId": 9,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 546
+    },
+    {
+      "userId": 9,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 547
+    },
+    {
+      "userId": 9,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 548
+    },
+    {
+      "userId": 9,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 549
+    },
+    {
+      "userId": 9,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 550
+    },
+    {
+      "userId": 9,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 551
+    },
+    {
+      "userId": 9,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 552
+    },
+    {
+      "userId": 9,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 553
+    },
+    {
+      "userId": 9,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 554
+    },
+    {
+      "userId": 9,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 555
+    },
+    {
+      "userId": 9,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 556
+    },
+    {
+      "userId": 9,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 557
+    },
+    {
+      "userId": 9,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 558
+    },
+    {
+      "userId": 9,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 559
+    },
+    {
+      "userId": 9,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 560
+    },
+    {
+      "userId": 9,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 561
+    },
+    {
+      "userId": 9,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 562
+    },
+    {
+      "userId": 9,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 563
+    },
+    {
+      "userId": 9,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 564
+    },
+    {
+      "userId": 9,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 565
+    },
+    {
+      "userId": 9,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 566
+    },
+    {
+      "userId": 9,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 567
+    },
+    {
+      "userId": 9,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 568
+    },
+    {
+      "userId": 9,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 569
+    },
+    {
+      "userId": 9,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 570
+    },
+    {
+      "userId": 9,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 571
+    },
+    {
+      "userId": 9,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 572
+    },
+    {
+      "userId": 9,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 573
+    },
+    {
+      "userId": 9,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 574
+    },
+    {
+      "userId": 9,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 575
+    },
+    {
+      "userId": 9,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 576
+    },
+    {
+      "userId": 9,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 577
+    },
+    {
+      "userId": 9,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 578
+    },
+    {
+      "userId": 9,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 579
+    },
+    {
+      "userId": 9,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 580
+    },
+    {
+      "userId": 9,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 581
+    },
+    {
+      "userId": 9,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 582
+    },
+    {
+      "userId": 9,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 583
+    },
+    {
+      "userId": 9,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 584
+    },
+    {
+      "userId": 9,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 585
+    },
+    {
+      "userId": 10,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 586
+    },
+    {
+      "userId": 10,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 587
+    },
+    {
+      "userId": 10,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 588
+    },
+    {
+      "userId": 10,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 589
+    },
+    {
+      "userId": 10,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 590
+    },
+    {
+      "userId": 10,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 591
+    },
+    {
+      "userId": 10,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 592
+    },
+    {
+      "userId": 10,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 593
+    },
+    {
+      "userId": 10,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 594
+    },
+    {
+      "userId": 10,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 595
+    },
+    {
+      "userId": 10,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 596
+    },
+    {
+      "userId": 10,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 597
+    },
+    {
+      "userId": 10,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 598
+    },
+    {
+      "userId": 10,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 599
+    },
+    {
+      "userId": 10,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 600
+    },
+    {
+      "userId": 10,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 601
+    },
+    {
+      "userId": 10,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 602
+    },
+    {
+      "userId": 10,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 603
+    },
+    {
+      "userId": 10,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 604
+    },
+    {
+      "userId": 10,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 605
+    },
+    {
+      "userId": 10,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 606
+    },
+    {
+      "userId": 10,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 607
+    },
+    {
+      "userId": 10,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 608
+    },
+    {
+      "userId": 10,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 609
+    },
+    {
+      "userId": 10,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 610
+    },
+    {
+      "userId": 10,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 611
+    },
+    {
+      "userId": 10,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 612
+    },
+    {
+      "userId": 10,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 613
+    },
+    {
+      "userId": 10,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 614
+    },
+    {
+      "userId": 10,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 615
+    },
+    {
+      "userId": 10,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 616
+    },
+    {
+      "userId": 10,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 617
+    },
+    {
+      "userId": 10,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 618
+    },
+    {
+      "userId": 10,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 619
+    },
+    {
+      "userId": 10,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 620
+    },
+    {
+      "userId": 10,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 621
+    },
+    {
+      "userId": 10,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 622
+    },
+    {
+      "userId": 10,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 623
+    },
+    {
+      "userId": 10,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 624
+    },
+    {
+      "userId": 10,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 625
+    },
+    {
+      "userId": 10,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 626
+    },
+    {
+      "userId": 10,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 627
+    },
+    {
+      "userId": 10,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 628
+    },
+    {
+      "userId": 10,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 629
+    },
+    {
+      "userId": 10,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 630
+    },
+    {
+      "userId": 10,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 631
+    },
+    {
+      "userId": 10,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 632
+    },
+    {
+      "userId": 10,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 633
+    },
+    {
+      "userId": 10,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 634
+    },
+    {
+      "userId": 10,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 635
+    },
+    {
+      "userId": 10,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 636
+    },
+    {
+      "userId": 10,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 637
+    },
+    {
+      "userId": 10,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 638
+    },
+    {
+      "userId": 10,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 639
+    },
+    {
+      "userId": 10,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 640
+    },
+    {
+      "userId": 10,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 641
+    },
+    {
+      "userId": 10,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 642
+    },
+    {
+      "userId": 10,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 643
+    },
+    {
+      "userId": 10,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 644
+    },
+    {
+      "userId": 10,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 645
+    },
+    {
+      "userId": 10,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 646
+    },
+    {
+      "userId": 10,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 647
+    },
+    {
+      "userId": 10,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 648
+    },
+    {
+      "userId": 10,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 649
+    },
+    {
+      "userId": 10,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 650
+    },
+    {
+      "userId": 10,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 651
+    },
+    {
+      "userId": 10,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 652
+    },
+    {
+      "userId": 10,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 653
+    },
+    {
+      "userId": 10,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 654
+    },
+    {
+      "userId": 10,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 655
+    },
+    {
+      "userId": 10,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 656
+    },
+    {
+      "userId": 10,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 657
+    },
+    {
+      "userId": 10,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 658
+    },
+    {
+      "userId": 11,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 659
+    },
+    {
+      "userId": 11,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 660
+    },
+    {
+      "userId": 11,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 661
+    },
+    {
+      "userId": 11,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 662
+    },
+    {
+      "userId": 11,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 663
+    },
+    {
+      "userId": 11,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 664
+    },
+    {
+      "userId": 11,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 665
+    },
+    {
+      "userId": 11,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 666
+    },
+    {
+      "userId": 11,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 667
+    },
+    {
+      "userId": 11,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 668
+    },
+    {
+      "userId": 11,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 669
+    },
+    {
+      "userId": 11,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 670
+    },
+    {
+      "userId": 11,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 671
+    },
+    {
+      "userId": 11,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 672
+    },
+    {
+      "userId": 11,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 673
+    },
+    {
+      "userId": 11,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 674
+    },
+    {
+      "userId": 11,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 675
+    },
+    {
+      "userId": 11,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 676
+    },
+    {
+      "userId": 11,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 677
+    },
+    {
+      "userId": 11,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 678
+    },
+    {
+      "userId": 11,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 679
+    },
+    {
+      "userId": 11,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 680
+    },
+    {
+      "userId": 11,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 681
+    },
+    {
+      "userId": 11,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 682
+    },
+    {
+      "userId": 11,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 683
+    },
+    {
+      "userId": 11,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 684
+    },
+    {
+      "userId": 11,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 685
+    },
+    {
+      "userId": 11,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 686
+    },
+    {
+      "userId": 11,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 687
+    },
+    {
+      "userId": 11,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 688
+    },
+    {
+      "userId": 11,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 689
+    },
+    {
+      "userId": 11,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 690
+    },
+    {
+      "userId": 11,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 691
+    },
+    {
+      "userId": 11,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 692
+    },
+    {
+      "userId": 11,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 693
+    },
+    {
+      "userId": 11,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 694
+    },
+    {
+      "userId": 11,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 695
+    },
+    {
+      "userId": 11,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 696
+    },
+    {
+      "userId": 11,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 697
+    },
+    {
+      "userId": 11,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 698
+    },
+    {
+      "userId": 11,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 699
+    },
+    {
+      "userId": 11,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 700
+    },
+    {
+      "userId": 11,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 701
+    },
+    {
+      "userId": 11,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 702
+    },
+    {
+      "userId": 11,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 703
+    },
+    {
+      "userId": 11,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 704
+    },
+    {
+      "userId": 11,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 705
+    },
+    {
+      "userId": 11,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 706
+    },
+    {
+      "userId": 11,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 707
+    },
+    {
+      "userId": 11,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 708
+    },
+    {
+      "userId": 11,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 709
+    },
+    {
+      "userId": 11,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 710
+    },
+    {
+      "userId": 11,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 711
+    },
+    {
+      "userId": 11,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 712
+    },
+    {
+      "userId": 11,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 713
+    },
+    {
+      "userId": 11,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 714
+    },
+    {
+      "userId": 11,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 715
+    },
+    {
+      "userId": 11,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 716
+    },
+    {
+      "userId": 11,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 717
+    },
+    {
+      "userId": 11,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 718
+    },
+    {
+      "userId": 11,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 719
+    },
+    {
+      "userId": 11,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 720
+    },
+    {
+      "userId": 11,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 721
+    },
+    {
+      "userId": 11,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 722
+    },
+    {
+      "userId": 11,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 723
+    },
+    {
+      "userId": 11,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 724
+    },
+    {
+      "userId": 11,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 725
+    },
+    {
+      "userId": 11,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 726
+    },
+    {
+      "userId": 11,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 727
+    },
+    {
+      "userId": 11,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 728
+    },
+    {
+      "userId": 11,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 729
+    },
+    {
+      "userId": 11,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 730
+    },
+    {
+      "userId": 11,
+      "exerciseId": 73,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 731
+    },
+    {
+      "userId": 16,
+      "exerciseId": 1,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 732
+    },
+    {
+      "userId": 16,
+      "exerciseId": 3,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 733
+    },
+    {
+      "userId": 16,
+      "exerciseId": 2,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 734
+    },
+    {
+      "userId": 16,
+      "exerciseId": 4,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 735
+    },
+    {
+      "userId": 16,
+      "exerciseId": 8,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 736
+    },
+    {
+      "userId": 16,
+      "exerciseId": 5,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 737
+    },
+    {
+      "userId": 16,
+      "exerciseId": 6,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 738
+    },
+    {
+      "userId": 16,
+      "exerciseId": 7,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 739
+    },
+    {
+      "userId": 16,
+      "exerciseId": 9,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 740
+    },
+    {
+      "userId": 16,
+      "exerciseId": 10,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 741
+    },
+    {
+      "userId": 16,
+      "exerciseId": 11,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 742
+    },
+    {
+      "userId": 16,
+      "exerciseId": 12,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 743
+    },
+    {
+      "userId": 16,
+      "exerciseId": 13,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 744
+    },
+    {
+      "userId": 16,
+      "exerciseId": 14,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 745
+    },
+    {
+      "userId": 16,
+      "exerciseId": 15,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 746
+    },
+    {
+      "userId": 16,
+      "exerciseId": 16,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 747
+    },
+    {
+      "userId": 16,
+      "exerciseId": 17,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 748
+    },
+    {
+      "userId": 16,
+      "exerciseId": 18,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 749
+    },
+    {
+      "userId": 16,
+      "exerciseId": 19,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 750
+    },
+    {
+      "userId": 16,
+      "exerciseId": 20,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 751
+    },
+    {
+      "userId": 16,
+      "exerciseId": 21,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 752
+    },
+    {
+      "userId": 16,
+      "exerciseId": 22,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 753
+    },
+    {
+      "userId": 16,
+      "exerciseId": 23,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 754
+    },
+    {
+      "userId": 16,
+      "exerciseId": 24,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 755
+    },
+    {
+      "userId": 16,
+      "exerciseId": 25,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 756
+    },
+    {
+      "userId": 16,
+      "exerciseId": 26,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 757
+    },
+    {
+      "userId": 16,
+      "exerciseId": 27,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 758
+    },
+    {
+      "userId": 16,
+      "exerciseId": 28,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 759
+    },
+    {
+      "userId": 16,
+      "exerciseId": 29,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 760
+    },
+    {
+      "userId": 16,
+      "exerciseId": 30,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 761
+    },
+    {
+      "userId": 16,
+      "exerciseId": 31,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 762
+    },
+    {
+      "userId": 16,
+      "exerciseId": 32,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 763
+    },
+    {
+      "userId": 16,
+      "exerciseId": 33,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 764
+    },
+    {
+      "userId": 16,
+      "exerciseId": 34,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 765
+    },
+    {
+      "userId": 16,
+      "exerciseId": 35,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 766
+    },
+    {
+      "userId": 16,
+      "exerciseId": 36,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 767
+    },
+    {
+      "userId": 16,
+      "exerciseId": 37,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 768
+    },
+    {
+      "userId": 16,
+      "exerciseId": 38,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 769
+    },
+    {
+      "userId": 16,
+      "exerciseId": 39,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 770
+    },
+    {
+      "userId": 16,
+      "exerciseId": 40,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 771
+    },
+    {
+      "userId": 16,
+      "exerciseId": 41,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 772
+    },
+    {
+      "userId": 16,
+      "exerciseId": 42,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 773
+    },
+    {
+      "userId": 16,
+      "exerciseId": 43,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 774
+    },
+    {
+      "userId": 16,
+      "exerciseId": 44,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 775
+    },
+    {
+      "userId": 16,
+      "exerciseId": 45,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 776
+    },
+    {
+      "userId": 16,
+      "exerciseId": 46,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 777
+    },
+    {
+      "userId": 16,
+      "exerciseId": 47,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 778
+    },
+    {
+      "userId": 16,
+      "exerciseId": 48,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 779
+    },
+    {
+      "userId": 16,
+      "exerciseId": 49,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 780
+    },
+    {
+      "userId": 16,
+      "exerciseId": 50,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 781
+    },
+    {
+      "userId": 16,
+      "exerciseId": 51,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 782
+    },
+    {
+      "userId": 16,
+      "exerciseId": 52,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 783
+    },
+    {
+      "userId": 16,
+      "exerciseId": 53,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 784
+    },
+    {
+      "userId": 16,
+      "exerciseId": 54,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 785
+    },
+    {
+      "userId": 16,
+      "exerciseId": 55,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 786
+    },
+    {
+      "userId": 16,
+      "exerciseId": 56,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 787
+    },
+    {
+      "userId": 16,
+      "exerciseId": 57,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 788
+    },
+    {
+      "userId": 16,
+      "exerciseId": 58,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 789
+    },
+    {
+      "userId": 16,
+      "exerciseId": 63,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 790
+    },
+    {
+      "userId": 16,
+      "exerciseId": 59,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 791
+    },
+    {
+      "userId": 16,
+      "exerciseId": 60,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 792
+    },
+    {
+      "userId": 16,
+      "exerciseId": 61,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 793
+    },
+    {
+      "userId": 16,
+      "exerciseId": 62,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 794
+    },
+    {
+      "userId": 16,
+      "exerciseId": 64,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 795
+    },
+    {
+      "userId": 16,
+      "exerciseId": 65,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 796
+    },
+    {
+      "userId": 16,
+      "exerciseId": 66,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 797
+    },
+    {
+      "userId": 16,
+      "exerciseId": 67,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 798
+    },
+    {
+      "userId": 16,
+      "exerciseId": 68,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 799
+    },
+    {
+      "userId": 16,
+      "exerciseId": 69,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 800
+    },
+    {
+      "userId": 16,
+      "exerciseId": 70,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 801
+    },
+    {
+      "userId": 16,
+      "exerciseId": 71,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 802
+    },
+    {
+      "userId": 16,
+      "exerciseId": 72,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 803
+    },
+    {
+      "userId": 16,
+      "exerciseId": 73,
+      "githubLink": "",
+      "complete": false,
+      "stuck": false,
+      "feedback": "",
+      "id": 804
     }
   ]
 }

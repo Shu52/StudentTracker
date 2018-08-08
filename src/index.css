@@ -101,3 +101,23 @@ a {
   justify-content: center;
   align-content: center;
 }
+#instructor{
+  /* background-color: #ed2623; */
+  background-color: #FFB701;
+  text-shadow: 1px 1px 1px black;
+  
+}
+#student{
+  /* background-color: #FFB701; */
+  background-color: #ed2623;
+  text-shadow: 1px 1px 1px black;
+  
+}
+.radiotBtns{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.card-link{
+  margin-left:12%;
+}
