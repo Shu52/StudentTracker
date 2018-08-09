@@ -16,8 +16,10 @@ handleFieldChange = (evt) => {
     this.setState(stateToChange)
 }
 handleLogin = (e) => {
+    e.preventDefault()
     API.checkOne(`users?name=${this.state.name.toLowerCase()}`).then(student =>{
-        if(student.length === 0 || student[0].name.toLowerCase() !== this.state.name){
+        console.log("student",student, "Student index of 0 name", student[0].name, "state name", this.state.name, "state name to lower case", this.state.name.toLowerCase())
+        if(student.length === 0 || student[0].name !== this.state.name.toLowerCase()){
             alert("Empty value or unregistered user, Please Register")
             return
            
@@ -25,7 +27,7 @@ handleLogin = (e) => {
         if(student.length === 0 || student[0].password !== this.state.password){
             alert("Empty value or incorrect password, try again" )
         }
-        else if(student[0].name.toLowerCase() === this.state.name && student[0].password === this.state.password)
+        else if(student[0].name === this.state.name.toLowerCase() && student[0].password === this.state.password)
         {
             sessionStorage.setItem("currentUser", student[0].id)
             sessionStorage.setItem(
