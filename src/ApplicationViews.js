@@ -22,30 +22,47 @@ export default class ApplicationViews extends Component {
             return <StudentView  />
         }  else if (this.isAuthenticated()&& this.isInstructor()) {
             return <InstructorView  />
-        }else {
+        } else {
             return <Login {...props} />
         }
     }} />
 
 
-        <Route path="/completed" render={(props) => {    
+        <Route path="/completed" render={(props) => {
+            if (this.isAuthenticated()){    
             return <CompleteView {...props} />
+            } else {
+                return <Login {...props} />
+            }
         }}/>
 
         <Route path="/stucks" render={(props) => {
+            if (this.isAuthenticated()){
             return <StuckView {...props} />
+            } else {
+                return <Login {...props} />
+            }
         }}/>
 
-        <Route path="/byStudent" render={(props) => {    
+        <Route path="/byStudent" render={(props) => {
+            if (this.isAuthenticated()){    
             return <ByStudent {...props} />
+        } else {
+            return <Login {...props} />
+        }
         }}/>
 
-        <Route path="/byExercise" render={(props) => {    
+        <Route path="/byExercise" render={(props) => {
+            if (this.isAuthenticated()){    
             return <ByExercise {...props} />
+        } else {
+            return <Login {...props} />
+        }
         }}/>
 
         <Route path="/register" render = {(props) => {
             return <Register {...props} />
+        
         }}/>
 
           </React.Fragment>
