@@ -118,7 +118,8 @@ state ={
                                         id="feedback"
                                         onChange={this.handleFieldChange}
                                         value={this.state.feedback}
-                                        placeholder={this.props.feedback}  />
+                                        // placeholder={this.props.feedback} 
+                                         />
                         </InputGroup>
                     </FormGroup>
 

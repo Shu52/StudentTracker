@@ -125,8 +125,8 @@ export default class Register extends Component {
                                 instructor:this.state.instructor
                             })
                         )
+                        this.props.history.push("/");
                     })
-                     
                 }//end of else
                 
             })// end of checkOne

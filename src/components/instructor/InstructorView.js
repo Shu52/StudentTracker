@@ -1,7 +1,16 @@
 import React, { Component } from "react";
 
 import Navbar from "../../nav/NavbarInstructor"
-export default class StudentView extends Component {
+export default class InstructorView extends Component {
+    state ={
+        cohortNumber:0
+    }
+    getCohortNumber = (evt) => {
+        const stateToChange={cohortNumber:evt.target.value}
+        console.log(stateToChange)
+        this.setState(stateToChange)
+    }
+    //set state for cohort selected a method that will change state and pass to navbar
    studentId  = JSON.parse(sessionStorage.getItem("credentials"));
 render() {
     return (

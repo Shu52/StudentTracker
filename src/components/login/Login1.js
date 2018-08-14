@@ -18,7 +18,7 @@ handleFieldChange = (evt) => {
 handleLogin = (e) => {
     e.preventDefault()
     API.checkOne(`users?name=${this.state.name.toLowerCase()}`).then(student =>{
-        console.log("student",student, "Student index of 0 name", student[0].name, "state name", this.state.name, "state name to lower case", this.state.name.toLowerCase())
+
         if(student.length === 0 || student[0].name !== this.state.name.toLowerCase()){
             alert("Empty value or unregistered user, Please Register")
             return
@@ -27,7 +27,7 @@ handleLogin = (e) => {
         if(student.length === 0 || student[0].password !== this.state.password){
             alert("Empty value or incorrect password, try again" )
         }
-        else if(student[0].name === this.state.name.toLowerCase() && student[0].password === this.state.password)
+        else if(student[0].name === this.state.name.toLowerCase() && student[0].password === this.state.password && student[0].instructor === false)
         {
             sessionStorage.setItem("currentUser", student[0].id)
             sessionStorage.setItem(
@@ -35,7 +35,20 @@ handleLogin = (e) => {
                 JSON.stringify({
                     name: this.state.name,
                     password: this.state.password,
-                    instructor:this.state.instructor
+                    instructor:false
+                })
+            )
+            this.props.history.push("/");
+        }
+        else if(student[0].name === this.state.name.toLowerCase() && student[0].password === this.state.password && student[0].instructor === true)
+        {
+            sessionStorage.setItem("currentUser", student[0].id)
+            sessionStorage.setItem(
+                "credentials",
+                JSON.stringify({
+                    name: this.state.name,
+                    password: this.state.password,
+                    instructor:true
                 })
             )
             this.props.history.push("/");

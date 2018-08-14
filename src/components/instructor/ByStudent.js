@@ -4,16 +4,28 @@ import ByStudentCard from "./ByStudentCard"
 import Navbar from "../../nav/NavbarInstructor"
 export default class ByStudent extends Component {
 state = {
-    students: []
+    students: [],
+    cohortNumber:this.props.location.state.cohortNumber
     
 }
 
 componentDidMount() {  
-    API.getAll("users?instructor=false")
+    API.getAll(`users?instructor=false&cohort=${this.state.cohortNumber}`)
     .then(students => {this.setState({ students })})
 }
+
+componentDidUpdate(prevProps){
+    if (prevProps.location.state.cohortNumber !== this.props.location.state.cohortNumber){
+        console.log("did update",prevProps.location.state.cohortNumber)
+        API.getAll(`users?instructor=false&cohort=${this.props.location.state.cohortNumber}`)
+        .then(students => {this.setState({ students })})
+    }
+}
+numberCompletes=()=> {
+
+}
 render(){
-    // console.log("students",this.state.students)
+    console.log("students",this.state.students[0])
     return(
         <React.Fragment>
             <h1>TESTING</h1>
