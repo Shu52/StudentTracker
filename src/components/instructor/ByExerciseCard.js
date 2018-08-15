@@ -11,17 +11,17 @@ toggle() {
     this.setState({ collapse: !this.state.collapse });
 }
 render(){ 
-         console.log("exercises",this.props.exercises.exerciseName)          
+        //  console.log("exercises",this.props.exercises.exerciseName)          
     return (
     <Container>
         <Card>
             <CardBody>
                     <CardHeader onClick={this.toggle.bind(this)}> 
-                    {this.props.exercises.exerciseName}
+                    {this.props.exercises.name}
                     </CardHeader>
                 <Collapse isOpen={this.state.collapse}>
-                 <p># of Completes {this.props.exercises.numberOfCompletes}</p>
-                 <p> # of Stucks {this.props.exercises.numberOfStucks}</p>
+                 <p># of Completes {this.props.exercises.complete?this.props.exercises.complete:0 }</p>
+                 <p> # of Stucks {this.props.exercises.stuck? this.props.exercises.stuck:0}</p>
             </Collapse>       
         </CardBody>
         </Card>

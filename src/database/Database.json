@@ -1177,7 +1177,7 @@
       "userId": 3,
       "exerciseId": 5,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 79
@@ -1186,7 +1186,7 @@
       "userId": 3,
       "exerciseId": 7,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 80
@@ -1196,7 +1196,7 @@
       "exerciseId": 8,
       "githubLink": "",
       "complete": false,
-      "stuck": false,
+      "stuck": true,
       "feedback": "",
       "id": 81
     },
@@ -1205,7 +1205,7 @@
       "exerciseId": 6,
       "githubLink": "",
       "complete": false,
-      "stuck": false,
+      "stuck": true,
       "feedback": "",
       "id": 82
     },
@@ -7054,7 +7054,7 @@
       "userId": 16,
       "exerciseId": 1,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 732
@@ -7063,7 +7063,7 @@
       "userId": 16,
       "exerciseId": 3,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 733
@@ -7072,7 +7072,7 @@
       "userId": 16,
       "exerciseId": 2,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 734
@@ -7081,7 +7081,7 @@
       "userId": 16,
       "exerciseId": 4,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 735
@@ -7090,7 +7090,7 @@
       "userId": 16,
       "exerciseId": 8,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 736
@@ -7099,7 +7099,7 @@
       "userId": 16,
       "exerciseId": 5,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 737
@@ -7108,7 +7108,7 @@
       "userId": 16,
       "exerciseId": 6,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 738
@@ -7117,7 +7117,7 @@
       "userId": 16,
       "exerciseId": 7,
       "githubLink": "",
-      "complete": false,
+      "complete": true,
       "stuck": false,
       "feedback": "",
       "id": 739
