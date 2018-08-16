@@ -17,7 +17,7 @@ render() {
     <React.Fragment>
         <h1 className ="blockquote text-center">Make them BLEED,<strong> {this.studentId.name} </strong>! Make them suffer!</h1>
         <Navbar/>
-        <h1 className = "text-center">(Placeholder for future content)</h1>
+       <a className = "center-me" href ="http://studentspy.bangazon.com/">Spy App</a>
 
     </React.Fragment> 
     )}
