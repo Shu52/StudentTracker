@@ -59,21 +59,24 @@ loadPage (){
                 })
             })
             //.sort() b-a b.numOfStucks
+            embedUsers.sort(function(a,b){
+                b = b.numOfStucks || 0
+                a = a.numOfStucks || 0
+                console.log("in sort function",b)
+                return a > b ? -1 : a < b ? 1 : 0;
+            })
+            console.log("sorted embedUsers",embedUsers)
             this.setState({studentsCard:embedUsers})
-        //set state of exercises = modified plainExercises
     })
 }
 
-// componentDidUpdate(prevProps){
-//     if (prevProps.location.state.cohortNumber !== this.props.location.state.cohortNumber){
-//         console.log("did update",prevProps.location.state.cohortNumber)
-//         API.getAll(`users?instructor=false&cohort=${this.props.location.state.cohortNumber}&_embed=studentExercises`)
-//         .then(students => {this.setState({ students })})
-//     }
-// }
-numberCompletes=()=> {
-
+componentDidUpdate(prevProps){
+    if (prevProps.location.state.cohortNumber !== this.props.location.state.cohortNumber){
+        console.log("did update",prevProps.location.state.cohortNumber)
+        this.loadPage()
+    }
 }
+
 render(){
     console.log("studentsCard",this.state.studentsCard,this.state.studentsCard.numbOfCompletes)
     return(
