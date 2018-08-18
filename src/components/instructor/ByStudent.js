@@ -26,7 +26,8 @@ loadPage (){
             console.log("studExer",studExer)
             let stud = {
                 name:studExer.name,
-                studentExercises:studExer.studentExercises
+                studentExercises:studExer.studentExercises,
+                id:studExer.id
             }
             return accumulator.concat(stud)
         }, [])
@@ -81,7 +82,7 @@ render(){
     console.log("studentsCard",this.state.studentsCard,this.state.studentsCard.numbOfCompletes)
     return(
         <React.Fragment>
-            <h1>TESTING</h1>
+            <h1 className ="blockquote text-center">A more personal humiliation seems to be in order</h1>
             <Navbar/>
             <div className ="flexBox-container" >
           {this.state.studentsCard.map(student => (

@@ -12,13 +12,17 @@ export default class InstructorView extends Component {
     }
     //set state for cohort selected a method that will change state and pass to navbar
    studentId  = JSON.parse(sessionStorage.getItem("credentials"));
+   Capitalize(str){
+    return str.charAt(0).toUpperCase() + str.slice(1);
+    }
 render() {
     return (
     <React.Fragment>
-        <h1 className ="blockquote text-center">Make them BLEED,<strong> {this.studentId.name} </strong>! Make them suffer!</h1>
+        <h1 className ="blockquote text-center">Make them <span className = "bleed">BLEED</span>,<strong> {this.Capitalize(this.studentId.name)} </strong>! Make them suffer!</h1>
         <Navbar/>
-       <a className = "center-me" href ="http://studentspy.bangazon.com/">Spy App</a>
-
+        <h3 className ="center-me">ToolBox</h3>
+        <a className = "center-me" href ="http://studentspy.bangazon.com/">Commit App</a>
+        <a className = "center-me" href = "https://imgflip.com/memegenerator">Meme Maker</a>
     </React.Fragment> 
     )}
 }

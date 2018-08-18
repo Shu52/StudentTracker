@@ -28,83 +28,83 @@ export default class NavBarInstructor extends Component {
   render() {
     return (
       <div className ="nav">
-        <Link to="/" className="linkClass">Instructor View</Link>
-        <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle.bind(this)}>
-        <DropdownToggle caret>
+        <ButtonDropdown direction="left" isOpen={this.state.dropdownOpen} toggle={this.toggle.bind(this)}>
+        <DropdownToggle outline color="danger" size="sm" caret>
           By Student
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem header>Cohort</DropdownItem>
+          <DropdownItem header className= "student-dropdown-header">Cohort</DropdownItem>
           <Link to={{
             pathname: "/bystudent",
             state:{cohortNumber:25}
           }}>
-          <DropdownItem>Day 25</DropdownItem>
+          <DropdownItem className = "student-dropdown-item">Day 25</DropdownItem>
           </Link>
           <Link to={{
             pathname: "/bystudent",
             state:{cohortNumber:26}
           }}>
-          <DropdownItem >Day 26</DropdownItem>
+          <DropdownItem className = "student-dropdown-item">Day 26</DropdownItem>
           </Link>
           <Link to={{
             pathname: "/bystudent",
             state:{cohortNumber:27}
           }}>
-          <DropdownItem  >Day 27</DropdownItem>
+          <DropdownItem className = "student-dropdown-item" >Day 27</DropdownItem>
           </Link>
           <DropdownItem divider />
           <Link to={{
             pathname: "/bystudent",
             state:{cohortNumber:7}
           }}>
-          <DropdownItem>Evening 7</DropdownItem>
+          <DropdownItem className = "student-dropdown-item">Evening 7</DropdownItem>
           </Link>
           <Link to={{
             pathname: "/bystudent",
             state:{cohortNumber:8}
           }}>
-          <DropdownItem>Evening 8</DropdownItem>
+          <DropdownItem className = "student-dropdown-item">Evening 8</DropdownItem>
           </Link>
           
         </DropdownMenu>
       </ButtonDropdown>
-      <ButtonDropdown isOpen={this.state.dropdownOpen1} toggle={this.toggle1.bind(this)}>
-        <DropdownToggle caret>
+          <Link to="/" className="linkClass">Instructor View</Link>
+      <ButtonDropdown direction="right" isOpen={this.state.dropdownOpen1} toggle={this.toggle1.bind(this)}>
+        <DropdownToggle outline color="warning" size="sm" caret>
           By Exercise
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem header>Cohort</DropdownItem>
+          <DropdownItem header className = "exercise-dropdown-header">Cohort</DropdownItem>
           <Link to={{
             pathname: "/byexercise",
             state:{cohortNumber:25}
           }}>
-          <DropdownItem>Day 25</DropdownItem>
+          <DropdownItem className ="exercise-dropdown-item ">Day 25</DropdownItem>
           </Link>
           <Link to={{
             pathname: "/byexercise",
             state:{cohortNumber:26}
           }}>
-          <DropdownItem >Day 26</DropdownItem>
+          <DropdownItem className ="exercise-dropdown-item " >Day 26</DropdownItem>
           </Link>
           <Link to={{
             pathname: "/byexercise",
             state:{cohortNumber:27}
           }}>
-          <DropdownItem  >Day 27</DropdownItem>
+          <DropdownItem className ="exercise-dropdown-item " >Day 27</DropdownItem>
           </Link>
           <DropdownItem divider />
           <Link to={{
             pathname: "/byexercise",
             state:{cohortNumber:7}
           }}>
-          <DropdownItem>Evening 7</DropdownItem>
+          <DropdownItem className ="exercise-dropdown-item ">Evening 7</DropdownItem>
           </Link>
           <Link to={{
             pathname: "/byexercise",
             state:{cohortNumber:8}
           }}>
-          <DropdownItem>Evening 8</DropdownItem>
+          <DropdownItem className ="exercise-dropdown-item ">Evening 8</DropdownItem>
           </Link>
           
         </DropdownMenu>
