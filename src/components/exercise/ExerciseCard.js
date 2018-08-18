@@ -46,7 +46,13 @@ state ={
         handleEditPatch = e =>{
             e.preventDefault()
             const patchFeedback={feedback:this.state.feedback}
-            API.patchFeedback(`studentExercises/${this.props.studentExercises.id}`, patchFeedback)           
+            API.patchFeedback(`studentExercises/${this.props.studentExercises.id}`, patchFeedback)
+            const x = document.getElementById("snackbar");
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);           
             }
     render(){ 
                    
@@ -54,7 +60,7 @@ state ={
             <Container>
                 <Card>
                     <CardBody>
-                            <CardHeader onClick={this.toggle.bind(this)}> 
+                            <CardHeader className ="center-me" onClick={this.toggle.bind(this)}> 
                                     {this.props.studentExercises.exercise.name}
                             </CardHeader>
                         <Collapse isOpen={this.state.collapse}>

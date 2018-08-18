@@ -3,8 +3,7 @@ import { Collapse,Card,CardBody,CardHeader,Container } from 'reactstrap';
 
 export default class ByExerciseCard extends Component{
 state ={
-    collapse:false,
-    filteredArray:this.props.filteredArray
+    collapse:false
 
 }
 toggle() {
