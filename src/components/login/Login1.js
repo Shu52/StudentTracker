@@ -18,11 +18,9 @@ handleFieldChange = (evt) => {
 handleLogin = (e) => {
     e.preventDefault()
     API.checkOne(`users?name=${this.state.name.toLowerCase()}`).then(student =>{
-
         if(student.length === 0 || student[0].name !== this.state.name.toLowerCase()){
             alert("Empty value or unregistered user, Please Register")
-            return
-           
+            return 
         }
         if(student.length === 0 || student[0].password !== this.state.password){
             alert("Empty value or incorrect password, try again" )
@@ -61,53 +59,38 @@ handleLogin = (e) => {
         return (
             <React.Fragment>
                 <Form  className = "loginForm" onSubmit={this.handleLogin}>
-                
-                <h1 className="h1-header">Please sign in</h1>
-            <div className="form-styling">
-            <FormGroup>
-                <Label htmlFor="inputName">
-                    Display Name
-                </Label>
-
-                <Input onChange={this.handleFieldChange} type="name"
-                       id="name"
-                       placeholder="Display Name"
-                       required="" autoFocus="" />
-            </FormGroup>
-            <FormGroup>
-                <Label htmlFor="inputPassword">
-                    Password
-                </Label>
-
-                <Input onChange={this.handleFieldChange} type="password"
-                       id="password"
-                       placeholder="Password"
-                       required="" />
-            </FormGroup>
-            
-
-            <div className = "loginButtons">
-                <Button type="submit"
-                        className="btn btn-warm"
-                        id ="signInBtn">
-                        Sign in
-                </Button>
-                {
-                    <Link className="card-link"
-                    to={{
-                        pathname: `/register`,
-                        
-                    }}>
-                        Need to Register?
-                    </Link>
-                }
-               
-            </div>
-            </div>
-            </Form>
+                    <h1 className="h1-header">Please sign in</h1>
+                    <div className="form-styling">
+                        <FormGroup>
+                            <Label htmlFor="inputName">Display Name</Label>
+                            <Input onChange={this.handleFieldChange} 
+                                type="name"
+                                id="name"
+                                placeholder="Display Name"
+                                required="" autoFocus="" />
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor="inputPassword">Password</Label>
+                            <Input onChange={this.handleFieldChange} 
+                                type="password"
+                                id="password"
+                                placeholder="Password"
+                                required="" />
+                        </FormGroup>
+                    <div className = "loginButtons">
+                        <Button type="submit"
+                            className="btn btn-warm"
+                            id ="signInBtn">
+                            Sign in
+                        </Button>
+                        <Link className="card-link"
+                                to={{pathname: `/register`}}>
+                                Need to Register?
+                        </Link>
+                    </div>
+                </div>
+                </Form>
             </React.Fragment>
         )
     }
-
-
 }//end of class

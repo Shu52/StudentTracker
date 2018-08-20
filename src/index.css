@@ -7,11 +7,12 @@ body {
   padding: 0;
   font-family: "Signika", sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   background-image: url("./images/NSS-logo-horizontal-large.png");
   background-repeat: no-repeat;
   background-color: black;
-  background-size: contain;
+  background-size: 98%;
+  background-position: center top; 
 }
 
 h1 {

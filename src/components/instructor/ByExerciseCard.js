@@ -15,7 +15,7 @@ render(){
     <Container>
         <Card>
             <CardBody>
-                    <CardHeader onClick={this.toggle.bind(this)}> 
+                    <CardHeader className ="center-me" onClick={this.toggle.bind(this)}> 
                     {this.props.exercises.name}
                     </CardHeader>
                 <Collapse isOpen={this.state.collapse}>
