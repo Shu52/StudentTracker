@@ -1,11 +1,8 @@
 import React, { Component } from "react"
 import API from "../../APIManger"
 import { Button, Form, FormGroup, Label, Input, ButtonGroup } from 'reactstrap';
-// , UncontrolledAlert
 
 export default class Register extends Component {
-
-    // Set initial component state
     state = {
         name: "",
         password: "",
@@ -30,12 +27,7 @@ export default class Register extends Component {
         if(num===1){this.setState({instructor:false})}
         if(num===2){this.setState({instructor:true})}
         }
-    
-    
-    // Simplistic handler for login submit
-
     registerUser =(e) =>{
-
         e.preventDefault()
         API.checkOne(`users?name=${this.state.name.toLocaleLowerCase()}`).then(user =>{  
             console.log("instructor?",user, "state instructor", this.state.instructor)
@@ -65,7 +57,6 @@ export default class Register extends Component {
                     .then((exercises)=>{                
                         let studentId  = JSON.parse(sessionStorage.getItem("currentUser"));
                         let fetchArray =  exercises.map((exercise)=>{
-                            
                             let studentExercises = {
                                 userId:studentId,
                                 exerciseId:exercise.id,
@@ -74,9 +65,6 @@ export default class Register extends Component {
                                 stuck: false,
                                 feedback: ""
                             }  
-                            
-                            
-                            // return ()=>API.postStudentExercises(studentExercises)
                             return fetch("http://localhost:5002/studentExercises", {
                                 method: "POST",
                                 headers: {
@@ -85,11 +73,9 @@ export default class Register extends Component {
                                 body: JSON.stringify(studentExercises)
                             })
                         })//end of map
-                        
-                        
-                        Promise.all(fetchArray).then(files=>{                    
-                            files.forEach (file=>{
-                                (file.json());
+
+                    Promise.all(fetchArray).then(files=>{                    
+                        files.forEach (file=>{(file.json());
                             })
                         })
                         .then(()=>{
@@ -107,7 +93,6 @@ export default class Register extends Component {
                         }
                 }
                  else if( this.state.name.length > 0 && this.state.instructor === true) {
-                
                     API.postUser({
                         name: this.state.name.toLowerCase(),
                         password: this.state.password,
@@ -125,71 +110,54 @@ export default class Register extends Component {
                                 instructor:this.state.instructor
                             })
                         )
+                        this.props.history.push("/");
                     })
-                     
                 }//end of else
-                
             })// end of checkOne
             this.props.history.push("/");
     }//end of register student 
-    // let boundregisterUser = registerUser.bind(this)  
     render() {
         return (
             <React.Fragment>
                 <Form  className = "loginForm" onSubmit={ this.registerUser}>
-                
-                <h1 className="h1-header">Please Register</h1>
-            <div className="form-styling">
-            <FormGroup>
-                <Label htmlFor="inputName">
-                    Display Name
-                </Label>
-
-                <Input onChange={this.handleFieldChange} type="name"
-                       id="name"
-                       placeholder="Display Name"
-                       required="" autoFocus="" />
-            </FormGroup>
-            <FormGroup>
-                <Label htmlFor="inputPassword">
-                    Password
-                </Label>
-
-                <Input onChange={this.handleFieldChange} type="password"
-                       id="password"
-                       placeholder="Password"
-                       required="" />
-            </FormGroup>
-            <FormGroup>
-                <Label htmlFor="inputCohort">
-                    Cohort #
-                </Label>
-
-                <Input onChange={this.handleFieldChange} type="number"
-                       id="cohort"
-                       placeholder="cohort #"
-                       required="" />
-            </FormGroup>
-                <div>
-                <span><strong>Role</strong></span>
-          </div>
-            <ButtonGroup className = "radioBtns">
-          <Button id = "student" onClick={() => this.onRadioBtnClick(1)}>Student</Button>
-          <Button id = "instructor" onClick={() => this.onRadioBtnClick(2)} >Instructor</Button>
-          </ButtonGroup>
-
-            <div className = "loginButtons">
-               
-
-                <Button type="submit" 
-                        className="btn btn-warm"
-                        id ="registerBtn" 
-                        >
-                        Register Account
-                </Button>
-            </div>
-            </div>
-            </Form>
+                    <h1 className="h1-header">Please Register</h1>
+                    <div className="form-styling">
+                <FormGroup>
+                    <Label htmlFor="inputName">Display Name</Label>
+                    <Input onChange={this.handleFieldChange} type="name"
+                        id="name"
+                        placeholder="Display Name"
+                        required="" autoFocus="" />
+                </FormGroup>
+                <FormGroup>
+                    <Label htmlFor="inputPassword">Password</Label>
+                    <Input onChange={this.handleFieldChange} type="password"
+                        id="password"
+                        placeholder="Password"
+                        required="" />
+                </FormGroup>
+                <FormGroup>
+                    <Label htmlFor="inputCohort">Cohort #</Label>
+                    <Input onChange={this.handleFieldChange} type="number"
+                        id="cohort"
+                        placeholder="cohort #"
+                        required="" />
+                </FormGroup>
+                    <div><span><strong>Role</strong></span></div>
+                <ButtonGroup className = "radioBtns">
+                    <Button id = "student" onClick={() => this.onRadioBtnClick(1)}>Student</Button>
+                    <Button id = "instructor" onClick={() => this.onRadioBtnClick(2)} >Instructor</Button>
+                </ButtonGroup>
+                    <div className = "loginButtons">
+                        <Button type="submit" 
+                                className="btn btn-warm"
+                                id ="registerBtn" 
+                                >
+                                Register Account
+                        </Button>
+                    </div>
+                </div>
+                </Form>
             </React.Fragment>
         )
     }

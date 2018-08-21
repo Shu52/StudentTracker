@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ExerciseCard from "../exercise/ExerciseCard";
 import API from "../../APIManger";
 import Navbar from "../../nav/NavbarStud"
+import StudentGreeting from "./StudentGreeting"
 
 export default class CompleteView extends Component {
     state = {
@@ -20,7 +21,7 @@ export default class CompleteView extends Component {
       console.log("stuck view",this.state.studentExercises)
       return (
         <React.Fragment>
-          <h1 className ="blockquote text-center">You can do it,<strong> {this.studentId.name} </strong>! We Believe in You!</h1>
+          <StudentGreeting/>
         <Navbar/>
             <div className ="flexBox-container" >
               {this.state.studentExercises.map(exercise => {
