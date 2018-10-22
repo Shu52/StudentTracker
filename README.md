@@ -2,6 +2,15 @@
 
 **Purpose** This app allows NSS students to track their assigned exercises
 
+### Install
+You will need two npm packages installed in order to run this web app
+
+**[React](https://www.npmjs.com/package/create-react-app)**
+```npm i create-react-app```
+
+**[JSON-Server](https://www.npmjs.com/package/json-server)**
+```npm i json-server```
+
 ### Use ###
 The student initial view is of a login in form for previous register user. Link to register is in the boot right. The login in form accepts two input fields. One for name and the other for password. A new user will want to click the register link and will be routed to a registration form
 
