@@ -11,6 +11,12 @@ You will need two npm packages installed in order to run this web app
 **[JSON-Server](https://www.npmjs.com/package/json-server)**
 ```npm i json-server```
 
+In the terminal type `npm i` <br>
+You will want to run two termnials.<br>
+In one of them cd to src/database and type `json-server Database.json -p 5002`.<br>
+In the other, you will type `npm start`.<br>
+Page will load on login page
+
 ### Use ###
 The student initial view is of a login in form for previous register user. Link to register is in the boot right. The login in form accepts two input fields. One for name and the other for password. A new user will want to click the register link and will be routed to a registration form
 
