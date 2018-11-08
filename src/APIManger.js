@@ -2,7 +2,7 @@ const ApiManager = Object.create({},{
 
     postUser: {
         value: (theObject) => {
-          return fetch("http://localhost:5002/users", {
+          return fetch("https://nss-student-tracker.herokuapp.com/users", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -13,14 +13,14 @@ const ApiManager = Object.create({},{
       },//end of postUser
       getAll: {
         value: collectionName => {
-          return fetch(`http://localhost:5002/${collectionName}`).then(e =>
+          return fetch(`https://nss-student-tracker.herokuapp.com/${collectionName}`).then(e =>
             e.json()
           );
         }
       },//end of getAll
       patchItem: {
         value: (collectionName, itemId, theObject) => {
-          return fetch(`http://localhost:5002/${collectionName}/${itemId}`, {
+          return fetch(`https://nss-student-tracker.herokuapp.com/${collectionName}/${itemId}`, {
             method: "PATCH",
             headers: {
               "Content-Type": "application/json"
@@ -31,21 +31,21 @@ const ApiManager = Object.create({},{
       },//end of patch
       getOne: {
         value: (collectionName,itemId) => {
-          return fetch(`http://localhost:5002/${collectionName}/${itemId}`).then(e =>
+          return fetch(`https://nss-student-tracker.herokuapp.com/${collectionName}/${itemId}`).then(e =>
             e.json()
           );
         }
       },
       checkOne: {
         value: (collectionAndJsonSyntax) => {
-          return fetch(`http://localhost:5002/${collectionAndJsonSyntax}`).then(e =>
+          return fetch(`https://nss-student-tracker.herokuapp.com/${collectionAndJsonSyntax}`).then(e =>
             e.json()
           );
         }
       },
       postStudentExercises: {
         value: (theObject) => {
-          return fetch("http://localhost:5002/studentExercises", {
+          return fetch("https://nss-student-tracker.herokuapp.com/studentExercises", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
@@ -56,7 +56,7 @@ const ApiManager = Object.create({},{
       },//end of post studentExercises
       patchFeedback: {
         value: (route, theObject) => {
-          return fetch(`http://localhost:5002/${route}`,
+          return fetch(`https://nss-student-tracker.herokuapp.com/${route}`,
           {
             
             method: "PATCH",
@@ -69,7 +69,7 @@ const ApiManager = Object.create({},{
       },//end of patch
       getOneRoute: {
         value: (route) => {
-          return fetch(`http://localhost:5002/${route}`).then(e =>
+          return fetch(`https://nss-student-tracker.herokuapp.com/${route}`).then(e =>
             e.json()
           );
         }

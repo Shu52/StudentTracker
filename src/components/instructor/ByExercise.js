@@ -25,10 +25,12 @@ export default class ByExercise extends Component {
             embedUsers = students.reduce((accumulator, studExer) => {
                 return accumulator.concat(studExer.studentExercises)
             }, [])
+            console.log("embed users",embedUsers)
             //flattens the array, we did it this way because flat() and flatMap()is experimental technology
             //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat#reduce_and_concat
         })
         .then(() => {return API.getAll("exercises?")})
+        // get all exercises
         .then(exercises => {this.setState({exercises})})
         .then(() => {
             let plainExercises = this.state.exercises
@@ -55,14 +57,15 @@ export default class ByExercise extends Component {
                     }
                     //add property of stuck or increment number of stuck is property exists
                 }
+                console.log("Findvar",findVar)
             })
             this.setState({exercises: plainExercises})
             //set state of exercises = modified plainExercises
         })
     }
-
+    
     componentDidMount() {
-       this.loadPage()
+        this.loadPage()
     }
 
     componentDidUpdate(prevProps) {
