@@ -65,7 +65,7 @@ export default class Register extends Component {
                                 stuck: false,
                                 feedback: ""
                             }  
-                            return fetch("http://localhost:5002/studentExercises", {
+                            return fetch("https://nss-student-tracker.herokuapp.com/studentExercises", {
                                 method: "POST",
                                 headers: {
                                     "Content-Type": "application/json"
