@@ -1,5 +1,8 @@
 # Welcome to NSS student tracker/squasher
 
+## Live Demo
+https://nssstudenttracker.herokuapp.com/
+
 **Purpose** This app allows NSS students to track their assigned exercises
 
 ### Install
